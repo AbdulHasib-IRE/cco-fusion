@@ -1,0 +1,617 @@
+{
+ "generated": "2026-11-22T11:18:14Z",
+ "corpora": {
+  "CMU-MOSEI": {
+   "n": 23236,
+   "classes": [
+    "happiness",
+    "sadness",
+    "anger",
+    "surprise",
+    "disgust",
+    "fear"
+   ],
+   "modalities": [
+    "text",
+    "visual",
+    "audio"
+   ],
+   "widths": {
+    "text": 600,
+    "visual": 70,
+    "audio": 148
+   },
+   "width_ratio": 8.571428571428571,
+   "role": "primary cost validation"
+  },
+  "TCGA": {
+   "n": 6246,
+   "classes": [
+    "TCGA-BLCA",
+    "TCGA-BRCA",
+    "TCGA-CESC",
+    "TCGA-COAD",
+    "TCGA-HNSC",
+    "TCGA-KIRC",
+    "TCGA-KIRP",
+    "TCGA-LGG",
+    "TCGA-LIHC",
+    "TCGA-LUAD",
+    "TCGA-LUSC",
+    "TCGA-OV",
+    "TCGA-PRAD",
+    "TCGA-SARC",
+    "TCGA-SKCM",
+    "TCGA-STAD",
+    "TCGA-THCA",
+    "TCGA-UCEC"
+   ],
+   "modalities": [
+    "protein",
+    "miRNA",
+    "cnv"
+   ],
+   "widths": {
+    "protein": 200,
+    "miRNA": 200,
+    "cnv": 200
+   },
+   "width_ratio": 1.0,
+   "role": "equal-width replication; no cost headroom"
+  },
+  "LAN-SDN-NIDS": {
+   "n": 1125059,
+   "classes": [
+    "DDoS",
+    "Hijack",
+    "Injection",
+    "Linkfab",
+    "Normal",
+    "PortScan"
+   ],
+   "modalities": [
+    "identity",
+    "volume",
+    "temporal",
+    "control"
+   ],
+   "role": "replication only; disqualified as cost corpus"
+  }
+ },
+ "primary_results": [
+  {
+   "claim": "MOSEI within-modality [PRIMARY]",
+   "value": 0.5999999999999999,
+   "expected": 0.6,
+   "ok": true,
+   "source": "cost_5seed_D2.json"
+  },
+  {
+   "claim": "MOSEI U*|width [PRIMARY]",
+   "value": 0.5748194014447885,
+   "expected": 0.575,
+   "ok": true,
+   "source": "cost_5seed_D2.json"
+  },
+  {
+   "claim": "TCGA U* vs cost, overall [PRIMARY]",
+   "value": 0.6126665270128717,
+   "expected": 0.613,
+   "ok": true,
+   "source": "tcga_operators_costs.json"
+  }
+ ],
+ "all_claims": [
+  {
+   "claim": "MOSEI U* vs cost, overall",
+   "value": 0.7688338493292053,
+   "expected": 0.769,
+   "ok": true,
+   "source": "cost_5seed_D2.json"
+  },
+  {
+   "claim": "MOSEI within-class",
+   "value": 0.7500000000000002,
+   "expected": 0.75,
+   "ok": true,
+   "source": "cost_5seed_D2.json"
+  },
+  {
+   "claim": "MOSEI within-modality [PRIMARY]",
+   "value": 0.5999999999999999,
+   "expected": 0.6,
+   "ok": true,
+   "source": "cost_5seed_D2.json"
+  },
+  {
+   "claim": "MOSEI U*|width [PRIMARY]",
+   "value": 0.5748194014447885,
+   "expected": 0.575,
+   "ok": true,
+   "source": "cost_5seed_D2.json"
+  },
+  {
+   "claim": "MOSEI width alone vs cost",
+   "value": 0.49836333439760144,
+   "expected": 0.498,
+   "ok": true,
+   "source": "cost_5seed_D2.json"
+  },
+  {
+   "claim": "MOSEI deletion vs cost, overall",
+   "value": -0.413828689370485,
+   "expected": -0.414,
+   "ok": true,
+   "source": "width_equalisation_mosei.json"
+  },
+  {
+   "claim": "MOSEI deletion within-modality",
+   "value": 0.619047619047619,
+   "expected": 0.619,
+   "ok": true,
+   "source": "width_equalisation_mosei.json"
+  },
+  {
+   "claim": "TCGA U* vs cost, overall [PRIMARY]",
+   "value": 0.6126665270128717,
+   "expected": 0.613,
+   "ok": true,
+   "source": "tcga_operators_costs.json"
+  },
+  {
+   "claim": "U* vs learned beta",
+   "value": 0.8802889576883385,
+   "expected": 0.88,
+   "ok": true,
+   "source": "contextual_discounting_D2.json"
+  },
+  {
+   "claim": "learned beta vs cost (sanity)",
+   "value": 0.894736842105263,
+   "expected": 0.895,
+   "ok": true,
+   "source": "contextual_discounting_D2.json"
+  },
+  {
+   "claim": "MOSEI gamma-subset mean regret",
+   "value": 0.0463853229248441,
+   "expected": 0.0464,
+   "ok": true,
+   "source": "modality_selection.json"
+  },
+  {
+   "claim": "MOSEI U* mean regret",
+   "value": 0.005616892981183785,
+   "expected": 0.0056,
+   "ok": true,
+   "source": "modality_selection.json"
+  },
+  {
+   "claim": "MOSEI random mean regret",
+   "value": 0.03012099452117556,
+   "expected": 0.0301,
+   "ok": true,
+   "source": "modality_selection.json"
+  },
+  {
+   "claim": "gamma(visual+audio) exceeds gamma(ALL)",
+   "value": 0.09699925435625004,
+   "expected": 0.097,
+   "ok": true,
+   "source": "modality_selection.json"
+  }
+ ],
+ "screens": [
+  {
+   "corpus": "PAMAP2",
+   "screen": "effective n",
+   "value": "7,379 windows = 105 bouts, n_eff ~140",
+   "verdict": "excluded"
+  },
+  {
+   "corpus": "DSADS / WESAD",
+   "screen": "effective n",
+   "value": "same defect",
+   "verdict": "excluded"
+  },
+  {
+   "corpus": "CMU-MOSEI",
+   "screen": "effective n",
+   "value": "3,290 videos, ICC 0.4586 vs 0.1415, n_eff 6,147",
+   "verdict": "retained"
+  },
+  {
+   "corpus": "LAN-SDN-NIDS",
+   "screen": "full vs best single",
+   "value": "single modality wins 6/6 (AUC 0.993-1.000 vs 0.942-0.977)",
+   "verdict": "excluded as cost corpus; replication retained"
+  },
+  {
+   "corpus": "TCGA",
+   "screen": "site confounding",
+   "value": "I(site;type)/H(type) = 1.000; CV blocked on site",
+   "verdict": "retained"
+  },
+  {
+   "corpus": "TCGA",
+   "screen": "cost dynamic range",
+   "value": "max removal cost 0.0060, AUC(ALL) 0.998-1.000",
+   "verdict": "correlation only; no decision experiment"
+  }
+ ],
+ "regime_R": {
+  "CMU-MOSEI": {
+   "happiness": 1.0681289597771566,
+   "sadness": 1.1646051153090948,
+   "anger": 1.4450719962407548,
+   "surprise": 1.1315964555994795,
+   "disgust": 1.07496952475243,
+   "fear": 1.6038992330810022
+  },
+  "TCGA": {
+   "TCGA-BLCA": 0.9949832875392801,
+   "TCGA-BRCA": 0.4992216288792731,
+   "TCGA-CESC": 1.2630381074598434,
+   "TCGA-COAD": 0.5436397082297338,
+   "TCGA-HNSC": 0.6849628547248059,
+   "TCGA-KIRC": 0.2261995481211642,
+   "TCGA-KIRP": 0.520988416560682,
+   "TCGA-LGG": 0.03468422936456117,
+   "TCGA-LIHC": 0.4285514174936872,
+   "TCGA-LUAD": 0.7294287728397618,
+   "TCGA-LUSC": 0.8677746339697864,
+   "TCGA-OV": 0.4648830313764929,
+   "TCGA-PRAD": 0.1738490454571659,
+   "TCGA-SARC": 0.4990766039033249,
+   "TCGA-SKCM": 0.29657849590941515,
+   "TCGA-STAD": 0.7362160960943471,
+   "TCGA-THCA": 0.08686801555864697,
+   "TCGA-UCEC": 0.5554735843109629
+  },
+  "LAN-SDN-NIDS": {
+   "DDoS": 0.1256872551270761,
+   "Hijack": 0.18615898305676623,
+   "Injection": 0.2273705287315222,
+   "Linkfab": 0.23750511830556728,
+   "Normal": 0.4682952879184154,
+   "PortScan": 0.17080540117206017
+  },
+  "scope": "validated on synthetic ground truth (6/6) and as a corpus-level contrast; failed three within-corpus predictive tests and no such claim is made"
+ },
+ "void_files": {
+  "conditional_gamma_D2.json": "width confound",
+  "conditional_gamma_D3.json": "width confound",
+  "width_matched_U.json": "operator shown broken on ground truth (10/10 sign errors)",
+  "gate1_D2_MOSEI.json": "superseded by _corrected",
+  "cost_5seed_D3.json": "subsample-dependent, rho -0.179 vs seed 0",
+  "gamma_vs_cost_D3.json": "seed-0 SDN costs, not reproducible"
+ },
+ "figure_inventory": [
+  "fig01a.png",
+  "fig01a_pamap2_class_distribution.png",
+  "fig01b.png",
+  "fig01b_pamap2_subject_class_coverage.png",
+  "fig02a.png",
+  "fig02a_estimator_validation.png",
+  "fig02b.png",
+  "fig02b_windows_vs_bouts.png",
+  "fig03a.png",
+  "fig03a_observability_matrix.png",
+  "fig03b.png",
+  "fig03b_null_blocked_vs_naive.png",
+  "fig03c_gamma_vs_within_video_null.png",
+  "fig04a.png",
+  "fig04a_gamma_vs_auc.png",
+  "fig04b.png",
+  "fig05a.png",
+  "fig05a_sdn_records_vs_runs.png",
+  "fig05b.png",
+  "fig05b_sdn_attack_episodes.png",
+  "fig06a.png",
+  "fig06a_sdn_observability_auc.png",
+  "fig06b.png",
+  "fig06b_sdn_control_ablation.png",
+  "fig06c_sdn_pairwise_auc.png",
+  "fig06d_sdn_multiclass_ablation.png",
+  "fig07a.png",
+  "fig07a_gamma_vs_removal_cost.png",
+  "fig07b.png",
+  "fig07b_marginal_vs_conditional.png",
+  "fig07c_mosei_marginal_vs_conditional.png",
+  "fig08a.png",
+  "fig08a_width_matched_U.png",
+  "fig08b.png",
+  "fig08b_nullification_U.png",
+  "fig09_U5seed.png",
+  "fig09a.png",
+  "fig09b.png",
+  "fig10_synthetic_groundtruth.png",
+  "fig11_redundancy_synergy.png",
+  "fig12_redundancy_synergy_ratio.png",
+  "fig13_R_dsweep.png",
+  "fig14_pid_width_artefact.png",
+  "fig15_Ustar_width_vs_d.png",
+  "fig16_no_free_lunch_width.png",
+  "fig16b_five_operators.png",
+  "fig17_width_equalisation.png",
+  "fig18_modality_selection.png"
+ ],
+ "uncertainty": {
+  "bootstrap_unit": "class",
+  "B": 5000,
+  "primary": [
+   {
+    "statistic": "MOSEI within-modality",
+    "rho": 0.5999999999999999,
+    "ci": [
+     0.1666666666666667,
+     0.8672393541882972
+    ],
+    "perm_p": 0.025398118181623335,
+    "null_exact": true,
+    "n_null": 46656,
+    "boot_frac_positive": 0.99499899979996
+   },
+   {
+    "statistic": "MOSEI U*|width",
+    "rho": 0.5748194014447885,
+    "ci": [
+     0.24089622641509442,
+     0.9023883696780894
+    ],
+    "perm_p": 0.016096191353923314,
+    "null_exact": true,
+    "n_null": 46656,
+    "boot_frac_positive": 0.9968
+   },
+   {
+    "statistic": "MOSEI overall",
+    "rho": 0.7688338493292053,
+    "ci": [
+     0.5347871235721703,
+     0.9017763845350053
+    ],
+    "perm_p": 0.002079002079002079,
+    "null_exact": true,
+    "n_null": 46656,
+    "boot_frac_positive": 1.0
+   },
+   {
+    "statistic": "TCGA overall",
+    "rho": 0.6126665270128717,
+    "ci": [
+     0.38085856424455994,
+     0.7962130310978365
+    ],
+    "perm_p": 4.999750012499375e-05,
+    "null_exact": false,
+    "n_null": 20000,
+    "boot_frac_positive": 1.0
+   },
+   {
+    "statistic": "U* vs learned beta",
+    "rho": 0.8802889576883385,
+    "ci": [
+     0.5262054507337526,
+     0.9771547248182763
+    ],
+    "perm_p": 0.0023790642347343376,
+    "null_exact": true,
+    "n_null": 46656,
+    "boot_frac_positive": 1.0
+   }
+  ],
+  "paired_vs_alternatives": [
+   {
+    "vs": "deletion",
+    "delta_rho": 1.1736929322535667,
+    "ci": [
+     0.7502612330198537,
+     1.3960292580982236
+    ],
+    "p_better": 1.0
+   },
+   {
+    "vs": "width-matched del.",
+    "delta_rho": 1.1475215771472382,
+    "ci": [
+     0.7502612330198537,
+     1.3631522896698618
+    ],
+    "p_better": 1.0
+   },
+   {
+    "vs": "marginal gamma",
+    "delta_rho": 1.0942234973853393,
+    "ci": [
+     0.7565308254963429,
+     1.3504273504273505
+    ],
+    "p_better": 1.0
+   }
+  ],
+  "label_null": {
+   "n_shuffles": 50,
+   "floor_p": 0.0196078431372549,
+   "observed_mean_abs_U": 0.05990010699902521,
+   "observed_rho": 0.7688338493292053,
+   "null_mean_abs_U": 0.005163606578994743,
+   "null_sd_abs_U": 0.00036730342903785996,
+   "null_rho_mean": -0.08819537948026206,
+   "null_rho_sd": 0.13254235685701238,
+   "p_magnitude": 0.0196078431372549,
+   "p_rho": 0.0196078431372549,
+   "shrinkage": 11.600439747422941,
+   "note": "the earlier p 0.0909 was the floor at 10 shuffles (0/10 exceeded), not a weak result"
+  },
+  "compute": {
+   "U_star_seconds_18_pairs": 8.353563785552979,
+   "ablation_seconds_5seed": 4500.0,
+   "speedup": 538.6922414817133
+  }
+ },
+ "sensitivity": {
+  "k_T_d": {
+   "k": [
+    {
+     "k": 3,
+     "overall": 0.7461300309597524,
+     "p_overall": 0.0003768588845993769,
+     "within_modality": 0.5999999999999999,
+     "p_within": 0.008479499419648023
+    },
+    {
+     "k": 5,
+     "overall": 0.7502579979360166,
+     "p_overall": 0.0003352980382239193,
+     "within_modality": 0.5809523809523809,
+     "p_within": 0.011461228687326403
+    },
+    {
+     "k": 10,
+     "overall": 0.8101135190918473,
+     "p_overall": 4.594554343625327e-05,
+     "within_modality": 0.5999999999999999,
+     "p_within": 0.008479499419648023
+    }
+   ],
+   "T": [
+    {
+     "T": 300,
+     "overall": 0.7502579979360166,
+     "p_overall": 0.0003352980382239193,
+     "within_modality": 0.5809523809523809,
+     "p_within": 0.011461228687326403
+    },
+    {
+     "T": 600,
+     "overall": 0.7502579979360166,
+     "p_overall": 0.0003352980382239193,
+     "within_modality": 0.5809523809523809,
+     "p_within": 0.011461228687326403
+    },
+    {
+     "T": 1200,
+     "overall": 0.7502579979360166,
+     "p_overall": 0.0003352980382239193,
+     "within_modality": 0.5809523809523809,
+     "p_within": 0.011461228687326403
+    }
+   ],
+   "d": [
+    {
+     "d": 16,
+     "overall": 0.6759545923632612,
+     "p_overall": 0.0020739524486674083,
+     "within_modality": 0.5809523809523809,
+     "p_within": 0.011461228687326403
+    },
+    {
+     "d": 32,
+     "overall": 0.7502579979360166,
+     "p_overall": 0.0003352980382239193,
+     "within_modality": 0.5809523809523809,
+     "p_within": 0.011461228687326403
+    },
+    {
+     "d": 64,
+     "overall": 0.6697626418988648,
+     "p_overall": 0.0023600851881755407,
+     "within_modality": 0.5238095238095237,
+     "p_within": 0.025670603762454718
+    },
+    {
+     "d": 128,
+     "overall": 0.6429308565531475,
+     "p_overall": 0.004002006540262521,
+     "within_modality": 0.5238095238095237,
+     "p_within": 0.025670603762454718
+    }
+   ]
+  },
+  "range_overall": [
+   0.6429308565531475,
+   0.8101135190918473
+  ],
+  "range_within_modality": [
+   0.5238095238095237,
+   0.5999999999999999
+  ],
+  "note": "single-seed recomputation; the 5-seed headline is +0.769 where this table reads +0.750 at k=5, d=32"
+ },
+ "estimator_family": {
+  "copula_full_width": {
+   "definition": "normal-score transform then I = -0.5 log2(1 - R^2); no PCA, full width",
+   "alpha": 1.0,
+   "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "results": {
+    "40:40": {
+     "narrow": 0.13394595519564137,
+     "wide": 0.13267161876116407,
+     "ratio": 1.0096051924773102,
+     "t": 0.2013474691146184,
+     "p": 0.8502514064873847
+    },
+    "40:80": {
+     "narrow": 0.13364114156682236,
+     "wide": 0.14191471488387142,
+     "ratio": 0.9417003844610524,
+     "t": -1.7906403437328042,
+     "p": 0.14784034684652442
+    },
+    "40:160": {
+     "narrow": 0.1335681907531258,
+     "wide": 0.1478114685532818,
+     "ratio": 0.9036388858079593,
+     "t": -2.8820273217836445,
+     "p": 0.044921412685881734
+    },
+    "20:160": {
+     "narrow": 0.12785859110496095,
+     "wide": 0.14845135629724776,
+     "ratio": 0.8612827413240104,
+     "t": -4.8662000337672575,
+     "p": 0.008242277416522637
+    },
+    "10:160": {
+     "narrow": 0.1326124577487687,
+     "wide": 0.14625937696681413,
+     "ratio": 0.9066937142693977,
+     "t": -3.135967012280645,
+     "p": 0.03498339792364057
+    }
+   },
+   "significant": "3/5",
+   "sign_errors": "0/5"
+  },
+  "interpretation": "the catastrophic part of the deletion failure is projection-driven and vanishes with a parametric estimator at full width (0/5 sign errors); a residual ~10% width bias survives, consistent with finite-sample bias in growing dimension",
+  "non_gaussian": [
+   "gaussian/linear",
+   "t(3)/linear",
+   "t(3)/non-linear"
+  ]
+ },
+ "tcga_protein_sensitivity": {
+  "selection_bias_pp": -3.9260078174169433,
+  "rho_original": [
+   0.6126665270128717,
+   8.481698761898458e-07
+  ],
+  "rho_low_missing": [
+   0.5836208047716094,
+   3.622036267883824e-06
+  ],
+  "agreement": [
+   0.9818562988374308,
+   3.1641155151735584e-39
+  ]
+ },
+ "_REMOVED_operators": "superseded 5-shared-dataset values deleted from this bundle so no figure can read them; use main_table_50seed.json",
+ "_REMOVED_U_calibration_by_width_ratio": "superseded 5-shared-dataset values deleted from this bundle so no figure can read them; use calibration_50seed.json"
+}

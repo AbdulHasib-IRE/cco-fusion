@@ -1,0 +1,126 @@
+{
+ "mirrors": "interim/D3_SDN/spec_D3_SDN.json",
+ "source_file": "/content/drive/MyDrive/CCO_Fusion/raw/D3_SDN/FULL_SDN_NIDS.parquet",
+ "label_col": "label",
+ "topology_col": "topology",
+ "classes": [
+  "DDoS",
+  "Hijack",
+  "Injection",
+  "Linkfab",
+  "Normal",
+  "PortScan"
+ ],
+ "groups": {
+  "identity": [
+   "last_layer",
+   "eth_type",
+   "arp_opcode"
+  ],
+  "volume": [
+   "packets",
+   "fw_packets",
+   "bk_packets",
+   "bytes_total",
+   "fw_bytes",
+   "bk_bytes",
+   "packet_size_max",
+   "packet_size_min",
+   "packet_size_range",
+   "fw_bytes_mean",
+   "fw_bytes_median",
+   "fw_bytes_stddev",
+   "bk_bytes_mean",
+   "bk_bytes_median",
+   "bk_bytes_stddev",
+   "duration",
+   "active_time",
+   "idle_time"
+  ],
+  "temporal": [
+   "interarrival_time_mean",
+   "interarrival_time_stddev",
+   "packets_per_second",
+   "bytes_per_second",
+   "flow_reversals",
+   "forward_to_backward_packet_ratio",
+   "forward_to_backward_byte_ratio"
+  ],
+  "control": [
+   "OFqty",
+   "OFqty_packetin",
+   "OF_flow_mod",
+   "OFpredominant_type",
+   "OFpredominant_qty",
+   "OF_activity_per_s",
+   "OF_first_seen_delay",
+   "OF_to_packet_ratio",
+   "OF_to_byte_ratio",
+   "OF_packetin_ratio",
+   "new_mac_ratio"
+  ]
+ },
+ "categorical_cols": [
+  "last_layer",
+  "eth_type",
+  "OFpredominant_type"
+ ],
+ "categorical_encoding": "factorize",
+ "categories": {
+  "last_layer": [
+   "0x0006",
+   "0x0007",
+   "ARP",
+   "Chargen",
+   "DAYTIME",
+   "DNS",
+   "ECHO",
+   "ENIP",
+   "Elasticsearch",
+   "FTP",
+   "FTP-DATA",
+   "HCrt",
+   "HTTP",
+   "ICMP",
+   "LLDP",
+   "MANOLITO",
+   "PNIO",
+   "RTP",
+   "SSH",
+   "SSHv2",
+   "TCP",
+   "TELNET",
+   "TIME",
+   "TZSP",
+   "UDP",
+   "XTACACS"
+  ],
+  "eth_type": [
+   "0x0800",
+   "0x0806",
+   "0x88cc"
+  ],
+  "OFpredominant_type": [
+   "BARRIER_REPLY",
+   "BARRIER_REQUEST",
+   "FLOW_MOD",
+   "NONE",
+   "PACKET_IN",
+   "PACKET_OUT",
+   "QUEUE_GET_CONFIG_REPLY",
+   "QUEUE_GET_CONFIG_REQUEST"
+  ]
+ },
+ "n_rows": 1125059,
+ "pca_d": 21,
+ "subsample": "per class min(3000,n), np.random.default_rng(SEEDS[0]), indices sorted ascending",
+ "verify_gamma_all": {
+  "DDoS": 0.9891554665493532,
+  "Hijack": 0.9909733579371054,
+  "Injection": 0.9540121942425892,
+  "Linkfab": 0.9741964239999026,
+  "Normal": 0.9241346676635663,
+  "PortScan": 0.9883364786326899
+ },
+ "verify_max_dev_vs_prerestart": 3.3043366744922587e-05
+}

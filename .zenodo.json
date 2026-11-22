@@ -1,0 +1,13 @@
+{
+  "title": "Class-conditional observability for multimodal fusion: code and results",
+  "upload_type": "software",
+  "description": "Experiment code and complete per-seed result files for the article 'Width-confounded modality importance in multimodal fusion: per-class estimation before training and the width bias of learned attention'. Contains the synthetic ground-truth generator, the five removal operators, the gated-fusion arms and rank interventions, and one JSON per experiment holding the exact arrays the article reports. No manuscript sources and no third-party corpora are included.",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {"name": "Hasib, Abdul", "orcid": "0009-0000-6630-4240", "affiliation": "Department of Internet of Things and Robotics Engineering, University of Frontier Technology, Bangladesh"},
+    {"name": "Ahmed, Md. Faishal", "orcid": "0009-0006-3819-5677", "affiliation": "Department of Internet of Things and Robotics Engineering, University of Frontier Technology, Bangladesh"},
+    {"name": "Khan, Arjina Nasrin", "orcid": "0009-0007-6143-8558", "affiliation": "Department of Internet of Things and Robotics Engineering, University of Frontier Technology, Bangladesh"}
+  ],
+  "keywords": ["multimodal fusion", "modality selection", "mutual information", "attention mechanisms", "feature dimensionality", "information fusion"]
+}

@@ -1,0 +1,30 @@
+{
+ "cmu_mosei": {
+  "clf": "HistGradientBoostingClassifier(max_iter=100, class_weight='balanced', early_stopping=False, random_state=seed)",
+  "n_fold": 5,
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "splitter": "GroupKFold by video, group ids permuted per seed",
+  "grouping_source": "interim/D2_MOSEI/video.npy",
+  "n_videos": 3290,
+  "grouping_icc": 0.45860634801755257,
+  "grouping_icc_random": 0.14154489288221925,
+  "n_eff": 6146.515528194463
+ },
+ "contextual_discounting": {
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "folds": 5,
+  "design": "level 1 per-(class,modality) HistGB with GroupKFold by video -> out-of-fold logits; level 2 logistic combination of standardised logits, nested in a second GroupKFold -> beta(c,m)"
+ }
+}

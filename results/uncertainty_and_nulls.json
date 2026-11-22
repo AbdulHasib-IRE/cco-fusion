@@ -1,0 +1,111 @@
+{
+ "bootstrap": {
+  "B": 5000,
+  "unit": "class (pairs within a class are dependent)"
+ },
+ "primary": [
+  {
+   "statistic": "MOSEI within-modality",
+   "rho": 0.5999999999999999,
+   "ci": [
+    0.1666666666666667,
+    0.8672393541882972
+   ],
+   "perm_p": 0.025398118181623335,
+   "null_exact": true,
+   "n_null": 46656,
+   "boot_frac_positive": 0.99499899979996
+  },
+  {
+   "statistic": "MOSEI U*|width",
+   "rho": 0.5748194014447885,
+   "ci": [
+    0.24089622641509442,
+    0.9023883696780894
+   ],
+   "perm_p": 0.016096191353923314,
+   "null_exact": true,
+   "n_null": 46656,
+   "boot_frac_positive": 0.9968
+  },
+  {
+   "statistic": "MOSEI overall",
+   "rho": 0.7688338493292053,
+   "ci": [
+    0.5347871235721703,
+    0.9017763845350053
+   ],
+   "perm_p": 0.002079002079002079,
+   "null_exact": true,
+   "n_null": 46656,
+   "boot_frac_positive": 1.0
+  },
+  {
+   "statistic": "TCGA overall",
+   "rho": 0.6126665270128717,
+   "ci": [
+    0.38085856424455994,
+    0.7962130310978365
+   ],
+   "perm_p": 4.999750012499375e-05,
+   "null_exact": false,
+   "n_null": 20000,
+   "boot_frac_positive": 1.0
+  },
+  {
+   "statistic": "U* vs learned beta",
+   "rho": 0.8802889576883385,
+   "ci": [
+    0.5262054507337526,
+    0.9771547248182763
+   ],
+   "perm_p": 0.0023790642347343376,
+   "null_exact": true,
+   "n_null": 46656,
+   "boot_frac_positive": 1.0
+  }
+ ],
+ "paired_vs_alternatives": [
+  {
+   "vs": "deletion",
+   "delta_rho": 1.1736929322535667,
+   "ci": [
+    0.7502612330198537,
+    1.3960292580982236
+   ],
+   "p_better": 1.0
+  },
+  {
+   "vs": "width-matched del.",
+   "delta_rho": 1.1475215771472382,
+   "ci": [
+    0.7502612330198537,
+    1.3631522896698618
+   ],
+   "p_better": 1.0
+  },
+  {
+   "vs": "marginal gamma",
+   "delta_rho": 1.0942234973853393,
+   "ci": [
+    0.7565308254963429,
+    1.3504273504273505
+   ],
+   "p_better": 1.0
+  }
+ ],
+ "label_permutation": {
+  "n": 10,
+  "observed_mean_abs_U": 0.05990010699902521,
+  "observed_rho": 0.7688338493292053,
+  "null_mean_abs_U": 0.001874800990020746,
+  "null_rho_mean": -0.0029824635877336637,
+  "null_rho_sd": 0.15817597073558304,
+  "p": 0.09090909090909091
+ },
+ "compute": {
+  "U_star_seconds_18_pairs": 8.353563785552979,
+  "ablation_seconds_5seed": 4500.0,
+  "speedup": 538.6922414817133
+ }
+}

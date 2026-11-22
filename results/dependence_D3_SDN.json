@@ -1,0 +1,80 @@
+{
+ "observed_mean_run": 17.308067444078645,
+ "expected_run_if_shuffled": 1.229539928798449,
+ "order_retained": true,
+ "episode_gap_threshold": 5000,
+ "episode_counts_by_threshold": {
+  "DDoS|500": 5,
+  "DDoS|2000": 5,
+  "DDoS|5000": 5,
+  "DDoS|20000": 5,
+  "DDoS|50000": 5,
+  "Hijack|500": 5,
+  "Hijack|2000": 5,
+  "Hijack|5000": 5,
+  "Hijack|20000": 5,
+  "Hijack|50000": 5,
+  "Injection|500": 5,
+  "Injection|2000": 5,
+  "Injection|5000": 5,
+  "Injection|20000": 5,
+  "Injection|50000": 5,
+  "Linkfab|500": 13,
+  "Linkfab|2000": 5,
+  "Linkfab|5000": 5,
+  "Linkfab|20000": 5,
+  "Linkfab|50000": 5,
+  "PortScan|500": 7,
+  "PortScan|2000": 5,
+  "PortScan|5000": 5,
+  "PortScan|20000": 5,
+  "PortScan|50000": 5
+ },
+ "n_episodes": 30,
+ "between_episode_variance": {
+  "identity": 0.0649461965772492,
+  "volume": 0.18401688003695382,
+  "temporal": 0.015138527672800214,
+  "control": 0.026469501772625803
+ },
+ "effective_n": {
+  "identity": 461.74354644260455,
+  "volume": 163.00924769582815,
+  "temporal": 1978.2668568343056,
+  "control": 1132.2694006277134
+ },
+ "per_class": [
+  {
+   "class": "DDoS",
+   "rows": 6827,
+   "episodes": 5
+  },
+  {
+   "class": "Hijack",
+   "rows": 8403,
+   "episodes": 5
+  },
+  {
+   "class": "Injection",
+   "rows": 12726,
+   "episodes": 5
+  },
+  {
+   "class": "Linkfab",
+   "rows": 8635,
+   "episodes": 5
+  },
+  {
+   "class": "Normal",
+   "rows": 1083731,
+   "episodes": 5
+  },
+  {
+   "class": "PortScan",
+   "rows": 4737,
+   "episodes": 5
+  }
+ ],
+ "blocking_unit": "topology",
+ "note": "no timestamp column is released; row index is used as a capture-order proxy, justified by the run-length test"
+}

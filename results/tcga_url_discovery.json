@@ -1,0 +1,49 @@
+{
+ "registry": "https://ropensci.r-universe.dev/UCSCXenaTools/data/XenaData/ndjson",
+ "n_datasets": 2314,
+ "verified": {
+  "protein": [
+   {
+    "url": "https://pancanatlas.xenahubs.net/download/TCGA-RPPA-pancan-clean.xena.gz",
+    "bytes": 0,
+    "dataset": "TCGA-RPPA-pancan-clean.xena",
+    "host": "https://pancanatlas.xenahubs.net",
+    "n": 7744,
+    "subtype": "protein expression"
+   }
+  ],
+  "miRNA": [
+   {
+    "url": "https://gdc.xenahubs.net/download/GDC-PANCAN.mirna.tsv",
+    "bytes": 0,
+    "dataset": "GDC-PANCAN.mirna.tsv",
+    "host": "https://gdc.xenahubs.net",
+    "n": 11020,
+    "subtype": "stem loop expression"
+   }
+  ],
+  "copy number": [
+   {
+    "url": "https://gdc.xenahubs.net/download/GDC-PANCAN.gistic.tsv",
+    "bytes": 0,
+    "dataset": "GDC-PANCAN.gistic.tsv",
+    "host": "https://gdc.xenahubs.net",
+    "n": 11368,
+    "subtype": "copy number (gene-level)"
+   }
+  ],
+  "phenotype": [
+   {
+    "url": "https://gdc.xenahubs.net/download/GDC-PANCAN.basic_phenotype.tsv",
+    "bytes": 0,
+    "dataset": "GDC-PANCAN.basic_phenotype.tsv",
+    "host": "https://gdc.xenahubs.net",
+    "n": 19188,
+    "subtype": "phenotype"
+   }
+  ]
+ },
+ "missing": [],
+ "design": "equal-width modalities; U* width bias is +4.3% at 1:1 vs +9.5% at 8:1 per our ground-truth calibration",
+ "why_tcga": "SDN disqualified as a cost-validation corpus: in 6/6 classes a single modality beats the full set (AUC 0.993-1.000 vs 0.942-0.977), reproduced under two protocols with different stochastic elements. Criterion is independent of U*."
+}

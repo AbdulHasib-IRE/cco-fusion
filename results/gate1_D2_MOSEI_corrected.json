@@ -1,0 +1,232 @@
+{
+ "dataset": "D2_MOSEI",
+ "d": 32,
+ "k": 5,
+ "null": "within-video label permutation (preserves each video's label composition; speaker identity cancels between observed and null)",
+ "uncertainty": "80% video subsampling without replacement",
+ "label_structure": {
+  "happiness": {
+   "prevalence": 0.5358925804785677,
+   "mixed_videos": 1924,
+   "movable_segments": 17884
+  },
+  "sadness": {
+   "prevalence": 0.2580478567739714,
+   "mixed_videos": 1756,
+   "movable_segments": 16639
+  },
+  "anger": {
+   "prevalence": 0.21488207953176106,
+   "mixed_videos": 1386,
+   "movable_segments": 13603
+  },
+  "surprise": {
+   "prevalence": 0.09975899466345327,
+   "mixed_videos": 1194,
+   "movable_segments": 13016
+  },
+  "disgust": {
+   "prevalence": 0.1762781890170425,
+   "mixed_videos": 1157,
+   "movable_segments": 12660
+  },
+  "fear": {
+   "prevalence": 0.08232914443105525,
+   "mixed_videos": 1097,
+   "movable_segments": 8865
+  }
+ },
+ "gamma": {
+  "happiness|text": 0.09894640294813754,
+  "happiness|visual": 0.27570875201025374,
+  "happiness|audio": 0.2711547814593127,
+  "sadness|text": 0.06263491422401109,
+  "sadness|visual": 0.17049991877752504,
+  "sadness|audio": 0.17517146856537438,
+  "anger|text": 0.08896586244862967,
+  "anger|visual": 0.27043095884078383,
+  "anger|audio": 0.2913127332218237,
+  "surprise|text": 0.05904615530364727,
+  "surprise|visual": 0.07390528616547078,
+  "surprise|audio": 0.06794494644394627,
+  "disgust|text": 0.19858335488556794,
+  "disgust|visual": 0.2276947892631004,
+  "disgust|audio": 0.24863092531408615,
+  "fear|text": 0.03896146906234034,
+  "fear|visual": 0.11205851863683818,
+  "fear|audio": 0.1289872609574912
+ },
+ "eps0": {
+  "happiness|text": 0.07442230762552046,
+  "happiness|visual": 0.25175378615301064,
+  "happiness|audio": 0.26434021723053136,
+  "sadness|text": 0.04393597346136117,
+  "sadness|visual": 0.16293408632254475,
+  "sadness|audio": 0.1728872929577352,
+  "anger|text": 0.07778589272914725,
+  "anger|visual": 0.2655669636691325,
+  "anger|audio": 0.287346686555967,
+  "surprise|text": 0.035570353352647154,
+  "surprise|visual": 0.06850679530543734,
+  "surprise|audio": 0.0741487122576902,
+  "disgust|text": 0.13910133483769313,
+  "disgust|visual": 0.21529450851858703,
+  "disgust|audio": 0.2378634661123347,
+  "fear|text": 0.05256870316779035,
+  "fear|visual": 0.11971727935060644,
+  "fear|audio": 0.14150908443077514
+ },
+ "p": {
+  "happiness|text": 0.000999000999000999,
+  "happiness|visual": 0.000999000999000999,
+  "happiness|audio": 0.000999000999000999,
+  "sadness|text": 0.000999000999000999,
+  "sadness|visual": 0.000999000999000999,
+  "sadness|audio": 0.00999000999000999,
+  "anger|text": 0.000999000999000999,
+  "anger|visual": 0.001998001998001998,
+  "anger|audio": 0.000999000999000999,
+  "surprise|text": 0.000999000999000999,
+  "surprise|visual": 0.003996003996003996,
+  "surprise|audio": 0.44755244755244755,
+  "disgust|text": 0.000999000999000999,
+  "disgust|visual": 0.000999000999000999,
+  "disgust|audio": 0.000999000999000999,
+  "fear|text": 0.9050949050949051,
+  "fear|visual": 0.5474525474525475,
+  "fear|audio": 0.9400599400599401
+ },
+ "interval95": {
+  "happiness|text": [
+   0.09181089250588817,
+   0.10651357890664419
+  ],
+  "happiness|visual": [
+   0.26862849761836427,
+   0.28585126436623065
+  ],
+  "happiness|audio": [
+   0.26293677178323444,
+   0.2805450553758798
+  ],
+  "sadness|text": [
+   0.05812146254564046,
+   0.07004682472886031
+  ],
+  "sadness|visual": [
+   0.16142161840602343,
+   0.17579716113827049
+  ],
+  "sadness|audio": [
+   0.16851147838361902,
+   0.18306821193491357
+  ],
+  "anger|text": [
+   0.08169135005336058,
+   0.09883642218248662
+  ],
+  "anger|visual": [
+   0.2588954272156588,
+   0.28609118228663044
+  ],
+  "anger|audio": [
+   0.27972855722238343,
+   0.30529635971721325
+  ],
+  "surprise|text": [
+   0.05322608289908948,
+   0.06862646049724394
+  ],
+  "surprise|visual": [
+   0.06402728963876887,
+   0.08130553128676057
+  ],
+  "surprise|audio": [
+   0.06013427103858321,
+   0.07645707044156294
+  ],
+  "disgust|text": [
+   0.18724709423784633,
+   0.20614286116264438
+  ],
+  "disgust|visual": [
+   0.21579958309385858,
+   0.23798559640878716
+  ],
+  "disgust|audio": [
+   0.23605075861272032,
+   0.25965580384212206
+  ],
+  "fear|text": [
+   0.03028861334878413,
+   0.04721834355008161
+  ],
+  "fear|visual": [
+   0.1005383242943472,
+   0.12394197820653421
+  ],
+  "fear|audio": [
+   0.11660181402335355,
+   0.13853294827586476
+  ]
+ },
+ "observability": [
+  [
+   1,
+   1,
+   1
+  ],
+  [
+   1,
+   1,
+   1
+  ],
+  [
+   1,
+   1,
+   1
+  ],
+  [
+   1,
+   1,
+   0
+  ],
+  [
+   1,
+   1,
+   1
+  ],
+  [
+   0,
+   0,
+   0
+  ]
+ ],
+ "deg": [
+  3,
+  3,
+  3,
+  2,
+  3,
+  0
+ ],
+ "candidate_blind": [
+  [
+   "surprise",
+   "audio"
+  ],
+  [
+   "fear",
+   "text"
+  ],
+  [
+   "fear",
+   "visual"
+  ],
+  [
+   "fear",
+   "audio"
+  ]
+ ],
+ "supersedes": "gate1_D2_MOSEI.json (null design and bootstrap both invalid)"
+}

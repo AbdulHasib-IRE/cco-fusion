@@ -1,0 +1,149 @@
+{
+ "reference": "Huang, Denoeux et al., contextual discounting; MICCAI 2022 and Information Fusion 2024",
+ "design": "level 1 per-(class,modality) HistGB with GroupKFold by video -> out-of-fold logits; level 2 logistic combination of standardised logits, nested in a second GroupKFold -> beta(c,m)",
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "folds": 5,
+ "beta": {
+  "happiness|text": 0.5978325616628289,
+  "happiness|visual": 0.8217583270189357,
+  "happiness|audio": 0.26887708817651107,
+  "sadness|text": 0.3912986216390708,
+  "sadness|visual": 0.428323334557455,
+  "sadness|audio": 0.34964730300633545,
+  "anger|text": 0.570888222966329,
+  "anger|visual": 0.39260058219254257,
+  "anger|audio": 0.35162983972169803,
+  "surprise|text": 0.5665100919982228,
+  "surprise|visual": 0.20460931381972358,
+  "surprise|audio": 0.14143782757902573,
+  "disgust|text": 1.0432281658909577,
+  "disgust|visual": 0.23453376025252787,
+  "disgust|audio": 0.26372149618721324,
+  "fear|text": 0.5207893745185854,
+  "fear|visual": 0.22094370693499332,
+  "fear|audio": 0.3192140607013294
+ },
+ "beta_sd": {
+  "happiness|text": 0.008059838812608106,
+  "happiness|visual": 0.01076175299402024,
+  "happiness|audio": 0.015288280204233127,
+  "sadness|text": 0.0036868118078917976,
+  "sadness|visual": 0.014794086011957707,
+  "sadness|audio": 0.011938886801251205,
+  "anger|text": 0.011237597056625628,
+  "anger|visual": 0.02935637323399619,
+  "anger|audio": 0.017122493362757476,
+  "surprise|text": 0.02045808688142091,
+  "surprise|visual": 0.004706102771790624,
+  "surprise|audio": 0.017721230458710345,
+  "disgust|text": 0.010824888573744777,
+  "disgust|visual": 0.011964047429686629,
+  "disgust|audio": 0.013542222988776173,
+  "fear|text": 0.00843588391766216,
+  "fear|visual": 0.021764595548421917,
+  "fear|audio": 0.005454084566372516
+ },
+ "fused_auc": {
+  "happiness": 0.7809162138099918,
+  "sadness": 0.7074669288419658,
+  "anger": 0.7316664027989237,
+  "surprise": 0.6731329516190464,
+  "disgust": 0.8082224751216367,
+  "fear": 0.6953242928036472
+ },
+ "joint_auc": {
+  "happiness": 0.7769191291894448,
+  "sadness": 0.7079070195233994,
+  "anger": 0.7287992305617367,
+  "surprise": 0.6818968157265457,
+  "disgust": 0.8056975682569668,
+  "fear": 0.690732971859467
+ },
+ "agreement_with_beta": [
+  {
+   "index": "U* (nullification)",
+   "overall": [
+    0.8802889576883385,
+    1.4473368008429358e-06
+   ],
+   "within_class": [
+    0.5833333333333335,
+    0.011048280869218146
+   ],
+   "within_modality": [
+    0.8666666666666666,
+    3.277917478678641e-06
+   ]
+  },
+  {
+   "index": "deletion",
+   "overall": [
+    -0.24664602683178533,
+    0.32380881293776365
+   ],
+   "within_class": [
+    -0.41666666666666674,
+    0.08541463077839107
+   ],
+   "within_modality": [
+    0.5047619047619047,
+    0.032646407089290175
+   ]
+  },
+  {
+   "index": "width-matched del.",
+   "overall": [
+    -0.23013415892672856,
+    0.35825371050744326
+   ],
+   "within_class": [
+    -0.41666666666666674,
+    0.08541463077839107
+   ],
+   "within_modality": [
+    0.5619047619047618,
+    0.015227757688862977
+   ]
+  },
+  {
+   "index": "marginal gamma",
+   "overall": [
+    0.01547987616099071,
+    0.9513880221541826
+   ],
+   "within_class": [
+    -0.41666666666666674,
+    0.08541463077839107
+   ],
+   "within_modality": [
+    0.7333333333333333,
+    0.0005342126294061518
+   ]
+  },
+  {
+   "index": "measured cost (ceiling)",
+   "overall": [
+    0.894736842105263,
+    5.422110534660314e-07
+   ],
+   "within_class": [
+    0.9166666666666669,
+    8.98102812581726e-08
+   ],
+   "within_modality": [
+    0.7142857142857142,
+    0.0008678661475729837
+   ]
+  }
+ ],
+ "beta_vs_cost": {
+  "rho": 0.894736842105263,
+  "p": 5.422110534660314e-07
+ }
+}

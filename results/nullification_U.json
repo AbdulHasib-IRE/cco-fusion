@@ -1,0 +1,582 @@
+{
+ "definition": "U*(c,m) = gamma(c, ALL) - gamma(c, ALL with m row-permuted); all comparisons full width",
+ "why": "width matching does not match compressibility. Deleting text left d=32 retaining 0.760 of variance vs 0.486-0.491 for other removals, so width-matched U on MOSEI measured the compression gap. Nullification preserves width, marginals and within-modality covariance.",
+ "r_target": 5,
+ "r_control": 20,
+ "mosei": {
+  "d": 32,
+  "evr_all": 0.47562533617019653,
+  "gamma_all": {
+   "happiness": 0.19883837958313463,
+   "sadness": 0.11398594336797226,
+   "anger": 0.16860015864572667,
+   "surprise": 0.07586015345525417,
+   "disgust": 0.2263467589616674,
+   "fear": 0.09992900998291818
+  },
+  "U": {
+   "happiness|text": 0.09490029483363531,
+   "happiness|visual": 0.06622398744862124,
+   "happiness|audio": 0.0468734818348884,
+   "sadness|text": 0.061543165889220985,
+   "sadness|visual": 0.03125840846646398,
+   "sadness|audio": 0.03750163685689316,
+   "anger|text": 0.1216892190711308,
+   "anger|visual": 0.05247437567136158,
+   "anger|audio": 0.07086100638073789,
+   "surprise|text": 0.06252364403065117,
+   "surprise|visual": 0.0136459505727647,
+   "surprise|audio": 0.010057770521900197,
+   "disgust|text": 0.18262722612207288,
+   "disgust|visual": 0.027191462747248013,
+   "disgust|audio": 0.037379558075976205,
+   "fear|text": 0.08029355515886386,
+   "fear|visual": 0.025080499095619116,
+   "fear|audio": 0.055420086484731026
+  },
+  "z": {
+   "happiness|text": -4.344954873527187,
+   "happiness|visual": 11.507461788869303,
+   "happiness|audio": 2.256081570598687,
+   "sadness|text": -2.22501993047052,
+   "sadness|visual": 10.31530692980586,
+   "sadness|audio": 6.164807189993751,
+   "anger|text": -4.089403175054453,
+   "anger|visual": 10.2759736167687,
+   "anger|audio": 5.354798536343589,
+   "surprise|text": 1.2792302784915783,
+   "surprise|visual": 4.898750379850373,
+   "surprise|audio": 1.068839727749465,
+   "disgust|text": 6.4212179675819705,
+   "disgust|visual": 7.447091911662366,
+   "disgust|audio": 2.7217869856416614,
+   "fear|text": 0.44037409656091964,
+   "fear|visual": 4.797911573367223,
+   "fear|audio": 7.690013001919101
+  },
+  "raw": {
+   "happiness|text": {
+    "gamma_all": 0.19883837958313463,
+    "gamma_null_m": 0.10393808474949932,
+    "sd_target": 0.002923019578807899,
+    "gamma_null_rand": 0.06678350053217855,
+    "sd_control": 0.008551201404575024
+   },
+   "happiness|visual": {
+    "gamma_all": 0.19883837958313463,
+    "gamma_null_m": 0.1326143921345134,
+    "sd_target": 0.0016307352387904424,
+    "gamma_null_rand": 0.188207630250202,
+    "sd_control": 0.004831059979661343
+   },
+   "happiness|audio": {
+    "gamma_all": 0.19883837958313463,
+    "gamma_null_m": 0.15196489774824623,
+    "sd_target": 0.0036296876710351935,
+    "gamma_null_rand": 0.16868531025577432,
+    "sd_control": 0.0074112623964616075
+   },
+   "sadness|text": {
+    "gamma_all": 0.11398594336797226,
+    "gamma_null_m": 0.05244277747875127,
+    "sd_target": 0.002940042172639923,
+    "gamma_null_rand": 0.039884116755993376,
+    "sd_control": 0.005644291339045283
+   },
+   "sadness|visual": {
+    "gamma_all": 0.11398594336797226,
+    "gamma_null_m": 0.08272753490150828,
+    "sd_target": 0.0028209259518379125,
+    "gamma_null_rand": 0.10963424277167391,
+    "sd_control": 0.0026084253288110384
+   },
+   "sadness|audio": {
+    "gamma_all": 0.11398594336797226,
+    "gamma_null_m": 0.0764843065110791,
+    "sd_target": 0.003080133003305208,
+    "gamma_null_rand": 0.09961804682266456,
+    "sd_control": 0.003752548879247092
+   },
+   "anger|text": {
+    "gamma_all": 0.16860015864572667,
+    "gamma_null_m": 0.04691093957459587,
+    "sd_target": 0.0034135777711679634,
+    "gamma_null_rand": 0.02602000874848239,
+    "sd_control": 0.00510855250310097
+   },
+   "anger|visual": {
+    "gamma_all": 0.16860015864572667,
+    "gamma_null_m": 0.11612578297436509,
+    "sd_target": 0.0020227437600506414,
+    "gamma_null_rand": 0.15876362967838847,
+    "sd_control": 0.004149275610677457
+   },
+   "anger|audio": {
+    "gamma_all": 0.16860015864572667,
+    "gamma_null_m": 0.09773915226498878,
+    "sd_target": 0.005822131213644005,
+    "gamma_null_rand": 0.13731521438911673,
+    "sd_control": 0.007390765844040816
+   },
+   "surprise|text": {
+    "gamma_all": 0.07586015345525417,
+    "gamma_null_m": 0.013336509424603002,
+    "sd_target": 0.00390947396799417,
+    "gamma_null_rand": 0.021874787031674007,
+    "sd_control": 0.00667454308315703
+   },
+   "surprise|visual": {
+    "gamma_all": 0.07586015345525417,
+    "gamma_null_m": 0.06221420288248947,
+    "sd_target": 0.0034393582892860855,
+    "gamma_null_rand": 0.07548075542364065,
+    "sd_control": 0.0027081503470189868
+   },
+   "surprise|audio": {
+    "gamma_all": 0.07586015345525417,
+    "gamma_null_m": 0.06580238293335397,
+    "sd_target": 0.005233545849322582,
+    "gamma_null_rand": 0.07059727781497512,
+    "sd_control": 0.004486074719282014
+   },
+   "disgust|text": {
+    "gamma_all": 0.2263467589616674,
+    "gamma_null_m": 0.043719532839594524,
+    "sd_target": 0.005591741760819975,
+    "gamma_null_rand": 0.09080573611979417,
+    "sd_control": 0.0073329084167393305
+   },
+   "disgust|visual": {
+    "gamma_all": 0.2263467589616674,
+    "gamma_null_m": 0.19915529621441938,
+    "sd_target": 0.004787582008019012,
+    "gamma_null_rand": 0.21646342377918484,
+    "sd_control": 0.0023241458236416316
+   },
+   "disgust|audio": {
+    "gamma_all": 0.2263467589616674,
+    "gamma_null_m": 0.1889672008856912,
+    "sd_target": 0.0036262321059861275,
+    "gamma_null_rand": 0.2006143312610485,
+    "sd_control": 0.004279221862989214
+   },
+   "fear|text": {
+    "gamma_all": 0.09992900998291818,
+    "gamma_null_m": 0.019635454824054314,
+    "sd_target": 0.004744339642362815,
+    "gamma_null_rand": 0.022051302754562498,
+    "sd_control": 0.0054858992601395755
+   },
+   "fear|visual": {
+    "gamma_all": 0.09992900998291818,
+    "gamma_null_m": 0.07484851088729906,
+    "sd_target": 0.0021937184225011633,
+    "gamma_null_rand": 0.09248985237703826,
+    "sd_control": 0.003676879246308895
+   },
+   "fear|audio": {
+    "gamma_all": 0.09992900998291818,
+    "gamma_null_m": 0.04450892349818715,
+    "sd_target": 0.005839554036381354,
+    "gamma_null_rand": 0.08225630530688374,
+    "sd_control": 0.004908623925509157
+   }
+  },
+  "cost": {
+   "happiness|text": 0.03156225990891082,
+   "happiness|visual": 0.053603835761967034,
+   "happiness|audio": 0.002794916455450047,
+   "sadness|text": 0.027340355674084327,
+   "sadness|visual": 0.02159351400547005,
+   "sadness|audio": 0.014512164141910588,
+   "anger|text": 0.04205060466223731,
+   "anger|visual": 0.0172126083132621,
+   "anger|audio": 0.013335360838836574,
+   "surprise|text": 0.08997825932906511,
+   "surprise|visual": 0.009833871212964307,
+   "surprise|audio": 0.0028822434220941995,
+   "disgust|text": 0.08962098762408566,
+   "disgust|visual": 0.0029730945296172484,
+   "disgust|audio": 0.001581046523968066,
+   "fear|text": 0.05558656601316869,
+   "fear|visual": 0.002298233240703884,
+   "fear|audio": 0.0006443103889423041
+  }
+ },
+ "sdn": {
+  "d": 21,
+  "evr_all": 0.978367030620575,
+  "gamma_all": {
+   "DDoS": 0.9891554252574665,
+   "Hijack": 0.9909730176156775,
+   "Injection": 0.9540367568955114,
+   "Linkfab": 0.9741633806331577,
+   "Normal": 0.9241237139584388,
+   "PortScan": 0.988338254947802
+  },
+  "U": {
+   "DDoS|identity": 0.0023856023416192196,
+   "DDoS|volume": 0.1085765874753648,
+   "DDoS|temporal": 0.005431863024928818,
+   "DDoS|control": 0.008596024015418147,
+   "Hijack|identity": 0.04354295039125078,
+   "Hijack|volume": 0.08067984399863348,
+   "Hijack|temporal": 0.025471474585256892,
+   "Hijack|control": 0.02612469366879777,
+   "Injection|identity": 0.0740638286992521,
+   "Injection|volume": 0.07485992517944828,
+   "Injection|temporal": 0.026918196606255385,
+   "Injection|control": 0.02728788318745501,
+   "Linkfab|identity": 0.04252054361965674,
+   "Linkfab|volume": 0.07046113330493597,
+   "Linkfab|temporal": 0.04769645806018752,
+   "Linkfab|control": 0.06831004622654846,
+   "Normal|identity": 0.10491016655717389,
+   "Normal|volume": 0.16102429915186367,
+   "Normal|temporal": 0.06485713027837314,
+   "Normal|control": 0.08592605913774543,
+   "PortScan|identity": 0.0026345058923411546,
+   "PortScan|volume": 0.14933940834317605,
+   "PortScan|temporal": 0.006404641044549297,
+   "PortScan|control": 0.010451966798542878
+  },
+  "z": {
+   "DDoS|identity": -0.4591350976440082,
+   "DDoS|volume": 24.368791488019557,
+   "DDoS|temporal": -0.380516759535641,
+   "DDoS|control": 0.2057945511226116,
+   "Hijack|identity": 3.823417312733438,
+   "Hijack|volume": -0.6504295020710732,
+   "Hijack|temporal": -0.8761207358590893,
+   "Hijack|control": -1.0482815915955883,
+   "Injection|identity": 7.113957535771057,
+   "Injection|volume": -0.8150495746711871,
+   "Injection|temporal": -0.7113701981983303,
+   "Injection|control": -1.0264171508798776,
+   "Linkfab|identity": 2.9382516338374702,
+   "Linkfab|volume": -1.9912120750668025,
+   "Linkfab|temporal": -0.07935210678934998,
+   "Linkfab|control": 0.057094217641395634,
+   "Normal|identity": 6.237101011492127,
+   "Normal|volume": -0.5323612145024729,
+   "Normal|temporal": -0.6034972178691269,
+   "Normal|control": -0.9247378346631387,
+   "PortScan|identity": -0.8348128006788385,
+   "PortScan|volume": 2.4463869794456863,
+   "PortScan|temporal": -0.45230863470188093,
+   "PortScan|control": -0.34764549682890744
+  },
+  "raw": {
+   "DDoS|identity": {
+    "gamma_all": 0.9891554252574665,
+    "gamma_null_m": 0.9867698229158473,
+    "sd_target": 0.0005226585033332347,
+    "gamma_null_rand": 0.9863031547088793,
+    "sd_control": 0.0010164071737547252
+   },
+   "DDoS|volume": {
+    "gamma_all": 0.9891554252574665,
+    "gamma_null_m": 0.8805788377821017,
+    "sd_target": 0.003214460761731784,
+    "gamma_null_rand": 0.9746808695129745,
+    "sd_control": 0.0038615797495389244
+   },
+   "DDoS|temporal": {
+    "gamma_all": 0.9891554252574665,
+    "gamma_null_m": 0.9837235622325377,
+    "sd_target": 0.0005767194896148786,
+    "gamma_null_rand": 0.9832553214101782,
+    "sd_control": 0.001230539288021961
+   },
+   "DDoS|control": {
+    "gamma_all": 0.9891554252574665,
+    "gamma_null_m": 0.9805594012420483,
+    "sd_target": 0.0014372366586844912,
+    "gamma_null_rand": 0.9809183393578644,
+    "sd_control": 0.0017441575292353384
+   },
+   "Hijack|identity": {
+    "gamma_all": 0.9909730176156775,
+    "gamma_null_m": 0.9474300672244267,
+    "sd_target": 0.0014751945204536866,
+    "gamma_null_rand": 0.9755495913127982,
+    "sd_control": 0.007354552691573254
+   },
+   "Hijack|volume": {
+    "gamma_all": 0.9909730176156775,
+    "gamma_null_m": 0.910293173617044,
+    "sd_target": 0.001491139756150208,
+    "gamma_null_rand": 0.8700497495365223,
+    "sd_control": 0.06187207676217042
+   },
+   "Hijack|temporal": {
+    "gamma_all": 0.9909730176156775,
+    "gamma_null_m": 0.9655015430304206,
+    "sd_target": 0.0016927867214840196,
+    "gamma_null_rand": 0.94739476553362,
+    "sd_control": 0.020666988870028026
+   },
+   "Hijack|control": {
+    "gamma_all": 0.9909730176156775,
+    "gamma_null_m": 0.9648483239468797,
+    "sd_target": 0.0012124282303376938,
+    "gamma_null_rand": 0.9396158723053896,
+    "sd_control": 0.024070299281974263
+   },
+   "Injection|identity": {
+    "gamma_all": 0.9540367568955114,
+    "gamma_null_m": 0.8799729281962593,
+    "sd_target": 0.0018088514476721584,
+    "gamma_null_rand": 0.9377986443704828,
+    "sd_control": 0.008128487678406696
+   },
+   "Injection|volume": {
+    "gamma_all": 0.9540367568955114,
+    "gamma_null_m": 0.8791768317160631,
+    "sd_target": 0.0017900989642386737,
+    "gamma_null_rand": 0.8336716216672595,
+    "sd_control": 0.05583121746571258
+   },
+   "Injection|temporal": {
+    "gamma_all": 0.9540367568955114,
+    "gamma_null_m": 0.927118560289256,
+    "sd_target": 0.004374847436512661,
+    "gamma_null_rand": 0.9100002608278277,
+    "sd_control": 0.024063841168470906
+   },
+   "Injection|control": {
+    "gamma_all": 0.9540367568955114,
+    "gamma_null_m": 0.9267488737080564,
+    "sd_target": 0.0021548730757331163,
+    "gamma_null_rand": 0.9000229322304472,
+    "sd_control": 0.026038089342816297
+   },
+   "Linkfab|identity": {
+    "gamma_all": 0.9741633806331577,
+    "gamma_null_m": 0.9316428370135009,
+    "sd_target": 0.0010303322372418118,
+    "gamma_null_rand": 0.9486429915261553,
+    "sd_control": 0.005785806197426152
+   },
+   "Linkfab|volume": {
+    "gamma_all": 0.9741633806331577,
+    "gamma_null_m": 0.9037022473282217,
+    "sd_target": 0.00199643124559453,
+    "gamma_null_rand": 0.8707319192079515,
+    "sd_control": 0.01655791893445811
+   },
+   "Linkfab|temporal": {
+    "gamma_all": 0.9741633806331577,
+    "gamma_null_m": 0.9264669225729701,
+    "sd_target": 0.0013356867455569053,
+    "gamma_null_rand": 0.9256440536235241,
+    "sd_control": 0.010369843760172137
+   },
+   "Linkfab|control": {
+    "gamma_all": 0.9741633806331577,
+    "gamma_null_m": 0.9058533344066092,
+    "sd_target": 0.0026029171884295954,
+    "gamma_null_rand": 0.906610821624137,
+    "sd_control": 0.013267319333202765
+   },
+   "Normal|identity": {
+    "gamma_all": 0.9241237139584388,
+    "gamma_null_m": 0.819213547401265,
+    "sd_target": 0.002581623687933264,
+    "gamma_null_rand": 0.8865482200404984,
+    "sd_control": 0.010795828465045924
+   },
+   "Normal|volume": {
+    "gamma_all": 0.9241237139584388,
+    "gamma_null_m": 0.7630994148065752,
+    "sd_target": 0.003371137934597838,
+    "gamma_null_rand": 0.7295274369575001,
+    "sd_control": 0.06306240374864709
+   },
+   "Normal|temporal": {
+    "gamma_all": 0.9241237139584388,
+    "gamma_null_m": 0.8592665836800657,
+    "sd_target": 0.0030109418807655846,
+    "gamma_null_rand": 0.8428913200581662,
+    "sd_control": 0.027133950475726226
+   },
+   "Normal|control": {
+    "gamma_all": 0.9241237139584388,
+    "gamma_null_m": 0.8381976548206934,
+    "sd_target": 0.003478382961487498,
+    "gamma_null_rand": 0.8185168101319213,
+    "sd_control": 0.021282620815381
+   },
+   "PortScan|identity": {
+    "gamma_all": 0.988338254947802,
+    "gamma_null_m": 0.9857037490554609,
+    "sd_target": 0.001026264001742764,
+    "gamma_null_rand": 0.9847783837342972,
+    "sd_control": 0.0011084704503946821
+   },
+   "PortScan|volume": {
+    "gamma_all": 0.988338254947802,
+    "gamma_null_m": 0.838998846604626,
+    "sd_target": 0.0026893968779149783,
+    "gamma_null_rand": 0.9491347519501179,
+    "sd_control": 0.04501982158621814
+   },
+   "PortScan|temporal": {
+    "gamma_all": 0.988338254947802,
+    "gamma_null_m": 0.9819336139032527,
+    "sd_target": 0.0013619668361619472,
+    "gamma_null_rand": 0.9810679861278857,
+    "sd_control": 0.001913798917275962
+   },
+   "PortScan|control": {
+    "gamma_all": 0.988338254947802,
+    "gamma_null_m": 0.9778862881492592,
+    "sd_target": 0.0017580642581362482,
+    "gamma_null_rand": 0.9767040083995953,
+    "sd_control": 0.0034008199745091186
+   }
+  },
+  "cost": {
+   "DDoS|identity": 0.0017611442491225482,
+   "DDoS|volume": 0.08802494561184238,
+   "DDoS|temporal": 0.0,
+   "DDoS|control": 0.0002973046736755025,
+   "Hijack|identity": 0.14918011504520046,
+   "Hijack|volume": 0.09092788559291964,
+   "Hijack|temporal": -5.9499015737540795e-05,
+   "Hijack|control": -5.9499015737540795e-05,
+   "Injection|identity": 0.06520617987930832,
+   "Injection|volume": 0.08129914662692628,
+   "Injection|temporal": 0.007904487299584928,
+   "Injection|control": 0.05309413562690535,
+   "Linkfab|identity": -0.007330681279483775,
+   "Linkfab|volume": 0.007265366066861012,
+   "Linkfab|temporal": -0.005141096356295671,
+   "Linkfab|control": 0.5868282220346204,
+   "Normal|identity": 0.0037980186818319384,
+   "Normal|volume": 0.0059009258741251625,
+   "Normal|temporal": 0.00016525820946611258,
+   "Normal|control": 0.04129119151150562,
+   "PortScan|identity": 0.0025261813677979195,
+   "PortScan|volume": 0.17452176766698446,
+   "PortScan|temporal": 0.0,
+   "PortScan|control": 0.00041325417266357967
+  }
+ },
+ "diagnostic_deletion_dose_response": [
+  {
+   "f": 0.0,
+   "n_cols": 818,
+   "evr": 0.47562533617019653,
+   "gamma": 0.1472563839202625
+  },
+  {
+   "f": 0.25,
+   "n_cols": 668,
+   "evr": 0.4897536138693492,
+   "gamma": 0.15775680254868055
+  },
+  {
+   "f": 0.5,
+   "n_cols": 518,
+   "evr": 0.512181798617045,
+   "gamma": 0.17098991686225903
+  },
+  {
+   "f": 0.75,
+   "n_cols": 368,
+   "evr": 0.5683028697967529,
+   "gamma": 0.19745511922093573
+  },
+  {
+   "f": 0.9,
+   "n_cols": 278,
+   "evr": 0.6476701895395914,
+   "gamma": 0.21129503030558802
+  },
+  {
+   "f": 1.0,
+   "n_cols": 218,
+   "evr": 0.7602350115776062,
+   "gamma": 0.21226903546189968
+  }
+ ],
+ "diagnostic_d_sweep": [
+  {
+   "d": 32,
+   "gamma_all": 0.14726006733277888,
+   "evr_all": 0.47562533617019653,
+   "gamma_no_text": 0.21226903546189968,
+   "evr_no_text": 0.7602350115776062,
+   "gap": 0.0650089681291208
+  },
+  {
+   "d": 64,
+   "gamma_all": 0.16366314847165273,
+   "evr_all": 0.5875768065452576,
+   "gamma_no_text": 0.2203848700028432,
+   "evr_no_text": 0.874471127986908,
+   "gap": 0.05672172153119048
+  },
+  {
+   "d": 128,
+   "gamma_all": 0.17286512731269624,
+   "evr_all": 0.70418381690979,
+   "gamma_no_text": 0.2216666908251146,
+   "evr_no_text": 0.9703633189201355,
+   "gap": 0.04880156351241835
+  },
+  {
+   "d": 218,
+   "gamma_all": 0.17458235002156738,
+   "evr_all": 0.7997118830680847,
+   "gamma_no_text": 0.2213215703381811,
+   "evr_no_text": 1.0,
+   "gap": 0.046739220316613705
+  }
+ ],
+ "agreement": [
+  {
+   "statistic": "MOSEI  U*",
+   "rho": 0.6945304437564499,
+   "p": 0.0013817713318639603,
+   "p_holm": 0.0027635426637279206,
+   "n": 18
+  },
+  {
+   "statistic": "MOSEI  z",
+   "rho": -0.15789473684210525,
+   "p": 0.5314832784708439,
+   "p_holm": null,
+   "n": 18
+  },
+  {
+   "statistic": "SDN    U*",
+   "rho": 0.5698130160618884,
+   "p": 0.003652192039381047,
+   "p_holm": 0.003652192039381047,
+   "n": 24
+  },
+  {
+   "statistic": "SDN    z",
+   "rho": 0.16441932829877393,
+   "p": 0.44264497912059486,
+   "p_holm": null,
+   "n": 24
+  }
+ ],
+ "pooled": {
+  "U": {
+   "rho": 0.6203737489389094,
+   "p": 1.1741534439439032e-05
+  },
+  "z": {
+   "rho": 0.0293485751588977,
+   "p": 0.8536211144096995
+  }
+ },
+ "supersedes": {
+  "delta_gamma": "void, width confound",
+  "width_matched_U": "MOSEI void (compressibility); SDN valid, evr >= 0.999"
+ }
+}

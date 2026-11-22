@@ -1,0 +1,127 @@
+{
+ "n_datasets": 50,
+ "n": 8000,
+ "alpha": 1.0,
+ "reps": 4,
+ "full_dimension": true,
+ "supersedes": "the 5-dataset calibration; those runs shared generator seeds, so their agreement measured permutation stability rather than data variability",
+ "results": {
+  "40:40": {
+   "width_ratio": 1.0,
+   "n_datasets": 50,
+   "U_ratio_mean": 0.9911635944224853,
+   "U_ratio_ci": [
+    0.9649708485009856,
+    1.016795456885012
+   ],
+   "U_ratio_sd": 0.09558115992737838,
+   "bias_pct": 0.883640557751475,
+   "bias_ci_pct": [
+    -1.679545688501194,
+    3.502915149901442
+   ],
+   "p_paired": 0.3695722515303972,
+   "U_narrow": 0.07785917351681627,
+   "U_wide": 0.07880752677125807,
+   "deletion_sign_errors": 0,
+   "deletion_wide_mean": 0.054581544010190955
+  },
+  "40:80": {
+   "width_ratio": 2.0,
+   "n_datasets": 50,
+   "U_ratio_mean": 0.9837730961335949,
+   "U_ratio_ci": [
+    0.955826870554354,
+    1.0115594599770223
+   ],
+   "U_ratio_sd": 0.1025899358193995,
+   "bias_pct": 1.622690386640513,
+   "bias_ci_pct": [
+    -1.1559459977022346,
+    4.4173129445646
+   ],
+   "p_paired": 0.1612831209740389,
+   "U_narrow": 0.06908128715018,
+   "U_wide": 0.07059138815233858,
+   "deletion_sign_errors": 0,
+   "deletion_wide_mean": 0.03299749826321652
+  },
+  "40:160": {
+   "width_ratio": 4.0,
+   "n_datasets": 50,
+   "U_ratio_mean": 0.9647889857201807,
+   "U_ratio_ci": [
+    0.9336800115255249,
+    0.9980470600973886
+   ],
+   "U_ratio_sd": 0.11721572973088562,
+   "bias_pct": 3.521101427981932,
+   "bias_ci_pct": [
+    0.19529399026113614,
+    6.631998847447507
+   ],
+   "p_paired": 0.009697701563867685,
+   "U_narrow": 0.055866844416981844,
+   "U_wide": 0.05837216285866195,
+   "deletion_sign_errors": 9,
+   "deletion_wide_mean": 0.006217447189136178
+  },
+  "20:160": {
+   "width_ratio": 8.0,
+   "n_datasets": 50,
+   "U_ratio_mean": 0.9532445364664629,
+   "U_ratio_ci": [
+    0.9240911892266036,
+    0.9833382475299357
+   ],
+   "U_ratio_sd": 0.10586452266936822,
+   "bias_pct": 4.67554635335371,
+   "bias_ci_pct": [
+    1.6661752470064295,
+    7.59088107733964
+   ],
+   "p_paired": 0.0005702003766901001,
+   "U_narrow": 0.057593264060201134,
+   "U_wide": 0.06089148158391242,
+   "deletion_sign_errors": 45,
+   "deletion_wide_mean": -0.014986473767635454
+  },
+  "10:160": {
+   "width_ratio": 16.0,
+   "n_datasets": 50,
+   "U_ratio_mean": 0.9999393127985994,
+   "U_ratio_ci": [
+    0.9644683828329645,
+    1.0357526788759899
+   ],
+   "U_ratio_sd": 0.13082781078991038,
+   "bias_pct": 0.0060687201400622115,
+   "bias_ci_pct": [
+    -3.5752678875989874,
+    3.5531617167035456
+   ],
+   "p_paired": 0.46093743906553797,
+   "U_narrow": 0.059991702401796625,
+   "U_wide": 0.06081055550018106,
+   "deletion_sign_errors": 50,
+   "deletion_wide_mean": -0.03415544282407064
+  }
+ },
+ "bias_range_pct": [
+  0.0060687201400622115,
+  4.67554635335371
+ ],
+ "mean_ci_width_pp": 6.049112014498316,
+ "significant": [
+  "40:160",
+  "20:160"
+ ],
+ "monotone": false,
+ "previous_table": {
+  "1:1": 4.3,
+  "2:1": 2.1,
+  "4:1": 9.4,
+  "8:1": 9.5,
+  "16:1": 14.9
+ }
+}

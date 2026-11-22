@@ -1,0 +1,92 @@
+{
+ "n_windows": 7379,
+ "n_bouts": 105,
+ "windows_per_bout": {
+  "median": 85.0,
+  "min": 12,
+  "max": 146
+ },
+ "per_class": [
+  {
+   "class": "lying",
+   "windows": 740,
+   "bouts": 8,
+   "subjects": 8
+  },
+  {
+   "class": "sitting",
+   "windows": 711,
+   "bouts": 8,
+   "subjects": 8
+  },
+  {
+   "class": "standing",
+   "windows": 728,
+   "bouts": 8,
+   "subjects": 8
+  },
+  {
+   "class": "walking",
+   "windows": 920,
+   "bouts": 8,
+   "subjects": 8
+  },
+  {
+   "class": "running",
+   "windows": 372,
+   "bouts": 6,
+   "subjects": 6
+  },
+  {
+   "class": "cycling",
+   "windows": 631,
+   "bouts": 7,
+   "subjects": 7
+  },
+  {
+   "class": "Nordic walking",
+   "windows": 723,
+   "bouts": 7,
+   "subjects": 7
+  },
+  {
+   "class": "ascending stairs",
+   "windows": 428,
+   "bouts": 16,
+   "subjects": 8
+  },
+  {
+   "class": "descending stairs",
+   "windows": 377,
+   "bouts": 17,
+   "subjects": 8
+  },
+  {
+   "class": "vacuum cleaning",
+   "windows": 671,
+   "bouts": 8,
+   "subjects": 8
+  },
+  {
+   "class": "ironing",
+   "windows": 920,
+   "bouts": 8,
+   "subjects": 8
+  },
+  {
+   "class": "rope jumping",
+   "windows": 158,
+   "bouts": 4,
+   "subjects": 4
+  }
+ ],
+ "between_bout_variance_share": {
+  "hr": 0.32782587150966813,
+  "hand": 0.7139558692307347,
+  "chest": 0.744587870390826,
+  "ankle": 0.745190883762475
+ },
+ "effective_n_worst": 140.22123020929035,
+ "min_bouts_any_class": 4,
+ "note": "windows overlap 50 % and are correlated within a bout; the permutation null must permute whole bouts, not windows"
+}

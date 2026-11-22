@@ -1,0 +1,341 @@
+{
+ "design": "same corpus, same 5-seed costs, modality widths equalised by random feature subsampling",
+ "native_widths": {
+  "text": 600,
+  "visual": 70,
+  "audio": 148
+ },
+ "equalised_width": 70,
+ "draws": 10,
+ "d": 32,
+ "nullification_reps": 5,
+ "control_reps": 3,
+ "native": [
+  {
+   "operator": "U* (nullification)",
+   "overall": [
+    0.7688338493292053,
+    0.0001926187299802615
+   ],
+   "within_class": [
+    0.7500000000000002,
+    0.00033777738235585026
+   ],
+   "within_modality": [
+    0.5999999999999999,
+    0.008479499419648023
+   ],
+   "n_negative": 0
+  },
+  {
+   "operator": "deletion",
+   "overall": [
+    -0.413828689370485,
+    0.08778525139466084
+   ],
+   "within_class": [
+    -0.5000000000000001,
+    0.034599676728248575
+   ],
+   "within_modality": [
+    0.619047619047619,
+    0.006156798696376369
+   ],
+   "n_negative": 6
+  },
+  {
+   "operator": "width-matched del.",
+   "overall": [
+    -0.3746130030959752,
+    0.12560824850361174
+   ],
+   "within_class": [
+    -0.5000000000000001,
+    0.034599676728248575
+   ],
+   "within_modality": [
+    0.7333333333333333,
+    0.0005342126294061518
+   ],
+   "n_negative": 6
+  },
+  {
+   "operator": "marginal gamma",
+   "overall": [
+    -0.29411764705882354,
+    0.23614329729664102
+   ],
+   "within_class": [
+    -0.5000000000000001,
+    0.034599676728248575
+   ],
+   "within_modality": [
+    0.2952380952380952,
+    0.23427925798942975
+   ],
+   "n_negative": 0
+  }
+ ],
+ "equalised": [
+  {
+   "operator": "U* (nullification)",
+   "overall": [
+    -0.3085655314757482,
+    0.2128287059586837
+   ],
+   "within_class": [
+    -0.5000000000000001,
+    0.034599676728248575
+   ],
+   "within_modality": [
+    0.35238095238095235,
+    0.15152018769098613
+   ],
+   "n_negative": 0
+  },
+  {
+   "operator": "deletion",
+   "overall": [
+    -0.3663570691434469,
+    0.13483747906980872
+   ],
+   "within_class": [
+    -0.41666666666666674,
+    0.08541463077839107
+   ],
+   "within_modality": [
+    0.6571428571428571,
+    0.0030444279155958393
+   ],
+   "n_negative": 5
+  },
+  {
+   "operator": "width-matched del.",
+   "overall": [
+    -0.3457172342621259,
+    0.15995306278645896
+   ],
+   "within_class": [
+    -0.5000000000000001,
+    0.034599676728248575
+   ],
+   "within_modality": [
+    0.6761904761904761,
+    0.0020636461890212432
+   ],
+   "n_negative": 5
+  },
+  {
+   "operator": "marginal gamma",
+   "overall": [
+    -0.3126934984520124,
+    0.2064536417438368
+   ],
+   "within_class": [
+    -0.5000000000000001,
+    0.034599676728248575
+   ],
+   "within_modality": [
+    0.3714285714285714,
+    0.12911387077538866
+   ],
+   "n_negative": 0
+  }
+ ],
+ "swing_overall": {
+  "U* (nullification)": -1.0773993808049536,
+  "deletion": 0.0474716202270381,
+  "width-matched del.": 0.02889576883384931,
+  "marginal gamma": -0.018575851393188847
+ },
+ "tcga_equal_width_reference": {
+  "U* (nullification)": 0.613,
+  "deletion": 0.609,
+  "width-matched del.": 0.584,
+  "marginal gamma": 0.409
+ },
+ "operators_native": {
+  "U": {
+   "happiness|text": 0.09702817592795612,
+   "happiness|visual": 0.06795408229620706,
+   "happiness|audio": 0.04740250610756867,
+   "sadness|text": 0.06079282818848932,
+   "sadness|visual": 0.03194228085272317,
+   "sadness|audio": 0.040014712004588074,
+   "anger|text": 0.12106202865903903,
+   "anger|visual": 0.05244773300716619,
+   "anger|audio": 0.07012878132501466,
+   "surprise|text": 0.06332817661331998,
+   "surprise|visual": 0.012716678327625788,
+   "surprise|audio": 0.009798092593742433,
+   "disgust|text": 0.17929507713844933,
+   "disgust|visual": 0.02600521758689891,
+   "disgust|audio": 0.03801576194766577,
+   "fear|text": 0.08130724554167791,
+   "fear|visual": 0.02756265195135018,
+   "fear|audio": 0.0513998959129713
+  },
+  "DEL": {
+   "happiness|text": -0.09699925435625004,
+   "happiness|visual": 0.05022496752965466,
+   "happiness|audio": 0.02773314899753343,
+   "sadness|text": -0.08014123558996981,
+   "sadness|visual": 0.016433986751534832,
+   "sadness|audio": 0.021534010632816597,
+   "anger|text": -0.1322162582332379,
+   "anger|visual": 0.03399582676846705,
+   "anger|audio": 0.046010200950676344,
+   "surprise|text": -0.0039051949273888886,
+   "surprise|visual": 0.007178247830384718,
+   "surprise|audio": 0.0011845836623472633,
+   "disgust|text": -0.030770399646980556,
+   "disgust|visual": 0.012932681057673312,
+   "disgust|audio": 0.021651961632997374,
+   "fear|text": -0.0460214660208976,
+   "fear|visual": 0.014740033690243223,
+   "fear|audio": 0.04274723204046359
+  },
+  "WMD": {
+   "happiness|text": -0.10682772704600685,
+   "happiness|visual": 0.05081967902893694,
+   "happiness|audio": 0.017310308143902886,
+   "sadness|text": -0.08185474415851084,
+   "sadness|visual": 0.01722218787128553,
+   "sadness|audio": 0.01761021168829953,
+   "anger|text": -0.14399862656267673,
+   "anger|visual": 0.030554728663914482,
+   "anger|audio": 0.035144751335095314,
+   "surprise|text": -0.00676163702930517,
+   "surprise|visual": 0.006896730663103229,
+   "surprise|audio": 0.0019143571425932066,
+   "disgust|text": -0.04511665871693002,
+   "disgust|visual": 0.009876593265303657,
+   "disgust|audio": 0.013102305039685014,
+   "fear|text": -0.05441449192122837,
+   "fear|visual": 0.015420567121865958,
+   "fear|audio": 0.04097659768209831
+  },
+  "MG": {
+   "happiness|text": 0.09894615277593247,
+   "happiness|visual": 0.2757085018380487,
+   "happiness|audio": 0.27115453128710765,
+   "sadness|text": 0.0626359517655017,
+   "sadness|visual": 0.17050095631901566,
+   "sadness|audio": 0.175172506106865,
+   "anger|text": 0.0889652916608278,
+   "anger|visual": 0.270430388052982,
+   "anger|audio": 0.2913121624340218,
+   "surprise|text": 0.05904603756157644,
+   "surprise|visual": 0.07390516842339995,
+   "surprise|audio": 0.06794482870187543,
+   "disgust|text": 0.19858353048379018,
+   "disgust|visual": 0.2276949648613227,
+   "disgust|audio": 0.2486311009123084,
+   "fear|text": 0.03895756042019027,
+   "fear|visual": 0.11205460999468808,
+   "fear|audio": 0.1289833523153411
+  }
+ },
+ "operators_equalised": {
+  "U": {
+   "happiness|text": 0.04849744422068064,
+   "happiness|visual": 0.1733019180627074,
+   "happiness|audio": 0.11515858798391396,
+   "sadness|text": 0.03586860019950762,
+   "sadness|visual": 0.103231656122624,
+   "sadness|audio": 0.09027188347133432,
+   "anger|text": 0.05523459380022835,
+   "anger|visual": 0.17253706857458556,
+   "anger|audio": 0.16088000574949124,
+   "surprise|text": 0.03131468952733382,
+   "surprise|visual": 0.04833119614506841,
+   "surprise|audio": 0.03973894670028248,
+   "disgust|text": 0.06943583522490498,
+   "disgust|visual": 0.11348281820334605,
+   "disgust|audio": 0.10794620006964968,
+   "fear|text": 0.04373763562546,
+   "fear|visual": 0.09210768872312747,
+   "fear|audio": 0.08644214785981805
+  },
+  "DEL": {
+   "happiness|text": -0.018408259583206233,
+   "happiness|visual": 0.08939844622419614,
+   "happiness|audio": 0.04844007642123916,
+   "sadness|text": -0.017361998703084244,
+   "sadness|visual": 0.04782135022957702,
+   "sadness|audio": 0.041516065621886235,
+   "anger|text": -0.03468392451584427,
+   "anger|visual": 0.07475280494564071,
+   "anger|audio": 0.07426476042776278,
+   "surprise|text": 0.007790388872139617,
+   "surprise|visual": 0.017577318145087454,
+   "surprise|audio": 0.009527674716022722,
+   "disgust|text": -0.002423262760867964,
+   "disgust|visual": 0.03613477266258709,
+   "disgust|audio": 0.037935121302245675,
+   "fear|text": -0.005961122677960257,
+   "fear|visual": 0.039607241712734366,
+   "fear|audio": 0.03670430171167901
+  },
+  "WMD": {
+   "happiness|text": -0.02305712576624106,
+   "happiness|visual": 0.08343715032439569,
+   "happiness|audio": 0.040218605114663755,
+   "sadness|text": -0.020776738929856167,
+   "sadness|visual": 0.04485274821109497,
+   "sadness|audio": 0.03603657205012622,
+   "anger|text": -0.039970461811213304,
+   "anger|visual": 0.06803195468594694,
+   "anger|audio": 0.06444916345466466,
+   "surprise|text": 0.005436065135316704,
+   "surprise|visual": 0.014741121148311036,
+   "surprise|audio": 0.006205835523366042,
+   "disgust|text": -0.007801774264986771,
+   "disgust|visual": 0.030403772765346358,
+   "disgust|audio": 0.029318359571855468,
+   "fear|text": -0.010452768647183891,
+   "fear|visual": 0.035479266172293356,
+   "fear|audio": 0.03091932712105099
+  },
+  "MG": {
+   "happiness|text": 0.07890857454874368,
+   "happiness|visual": 0.2757085018380487,
+   "happiness|audio": 0.2662948473855381,
+   "sadness|text": 0.05317012291150328,
+   "sadness|visual": 0.17050095631901566,
+   "sadness|audio": 0.1719018854231485,
+   "anger|text": 0.0735398331204457,
+   "anger|visual": 0.2704211984334006,
+   "anger|audio": 0.28093200365085613,
+   "surprise|text": 0.054618757589255676,
+   "surprise|visual": 0.07390516842339996,
+   "surprise|audio": 0.06845765161746363,
+   "disgust|text": 0.16856302760526168,
+   "disgust|visual": 0.2277086555740489,
+   "disgust|audio": 0.24300570298045926,
+   "fear|text": 0.040250089034584546,
+   "fear|visual": 0.11205460999468811,
+   "fear|audio": 0.12969425757397005
+  }
+ },
+ "cost_reference": {
+  "happiness|text": 0.033406734545109784,
+  "happiness|visual": 0.05129749626419886,
+  "happiness|audio": 0.003936782524927995,
+  "sadness|text": 0.028933314513353858,
+  "sadness|visual": 0.024518465496638563,
+  "sadness|audio": 0.017429468213557932,
+  "anger|text": 0.04310594387337234,
+  "anger|visual": 0.02041326346527954,
+  "anger|audio": 0.012337229760752466,
+  "surprise|text": 0.0895268726616834,
+  "surprise|visual": 0.01442916302943258,
+  "surprise|audio": 0.003925691273401544,
+  "disgust|text": 0.09049614764449576,
+  "disgust|visual": 0.004762052121748006,
+  "disgust|audio": 0.0047743194310231555,
+  "fear|text": 0.05219705046500922,
+  "fear|visual": 0.00547750798992006,
+  "fear|audio": 0.007601251123588027
+ }
+}

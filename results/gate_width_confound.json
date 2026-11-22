@@ -1,0 +1,195 @@
+{
+ "question": "is a learned attention gate width-confounded?",
+ "why_not_on_mosei": "gate order text>audio>visual coincides exactly with width order 600>148>70; with M=3 a chance match has p=1/6",
+ "prediction_stated_before_running": "arm A gate 0.50/0.50 at every ratio if information-driven",
+ "arch": {
+  "hidden": 64,
+  "epochs": 25,
+  "batch": 512,
+  "nout": 1,
+  "split": "80/20 iid"
+ },
+ "n_seeds": 10,
+ "n": 8000,
+ "pairs": [
+  [
+   40,
+   40
+  ],
+  [
+   40,
+   80
+  ],
+  [
+   40,
+   160
+  ],
+  [
+   20,
+   160
+  ],
+  [
+   10,
+   160
+  ]
+ ],
+ "labels": [
+  "1:1",
+  "2:1",
+  "4:1",
+  "8:1",
+  "16:1"
+ ],
+ "arms": {
+  "A equal info": [
+   1.0,
+   1.0
+  ],
+  "B narrow stronger": [
+   1.5,
+   0.5
+  ],
+  "C wide stronger": [
+   0.5,
+   1.5
+  ]
+ },
+ "results": {
+  "A equal info": {
+   "1:1": {
+    "gate_narrow": 0.5083931505680084,
+    "gate_wide": 0.4916068196296692,
+    "gate_narrow_sd": 0.014878600734773506,
+    "auc": 0.8115856264675937,
+    "w_narrow": 40,
+    "w_wide": 40
+   },
+   "2:1": {
+    "gate_narrow": 0.4277748942375183,
+    "gate_wide": 0.5722250819206238,
+    "gate_narrow_sd": 0.017391803724500412,
+    "auc": 0.8108357236846839,
+    "w_narrow": 40,
+    "w_wide": 80
+   },
+   "4:1": {
+    "gate_narrow": 0.3207146883010864,
+    "gate_wide": 0.6792852818965912,
+    "gate_narrow_sd": 0.01373841452794936,
+    "auc": 0.7890794786904777,
+    "w_narrow": 40,
+    "w_wide": 160
+   },
+   "8:1": {
+    "gate_narrow": 0.28380573987960817,
+    "gate_wide": 0.716194236278534,
+    "gate_narrow_sd": 0.007061083484098948,
+    "auc": 0.7873223513795516,
+    "w_narrow": 20,
+    "w_wide": 160
+   },
+   "16:1": {
+    "gate_narrow": 0.2643126219511032,
+    "gate_wide": 0.7356873512268066,
+    "gate_narrow_sd": 0.013587811669771716,
+    "auc": 0.7927464098891345,
+    "w_narrow": 10,
+    "w_wide": 160
+   }
+  },
+  "B narrow stronger": {
+   "1:1": {
+    "gate_narrow": 0.6375706970691681,
+    "gate_wide": 0.3624292850494385,
+    "gate_narrow_sd": 0.025984258728273736,
+    "auc": 0.8444764052254641,
+    "w_narrow": 40,
+    "w_wide": 40
+   },
+   "2:1": {
+    "gate_narrow": 0.5411490797996521,
+    "gate_wide": 0.45885091125965116,
+    "gate_narrow_sd": 0.029350150940257582,
+    "auc": 0.8390729040844842,
+    "w_narrow": 40,
+    "w_wide": 80
+   },
+   "4:1": {
+    "gate_narrow": 0.4282141387462616,
+    "gate_wide": 0.5717858493328094,
+    "gate_narrow_sd": 0.023001859364197123,
+    "auc": 0.8211986883286959,
+    "w_narrow": 40,
+    "w_wide": 160
+   },
+   "8:1": {
+    "gate_narrow": 0.42449016869068146,
+    "gate_wide": 0.5755098164081573,
+    "gate_narrow_sd": 0.016836614095411623,
+    "auc": 0.8191408763099147,
+    "w_narrow": 20,
+    "w_wide": 160
+   },
+   "16:1": {
+    "gate_narrow": 0.42762048840522765,
+    "gate_wide": 0.5723794877529145,
+    "gate_narrow_sd": 0.028222081295499243,
+    "auc": 0.8289515081219113,
+    "w_narrow": 10,
+    "w_wide": 160
+   }
+  },
+  "C wide stronger": {
+   "1:1": {
+    "gate_narrow": 0.3848023772239685,
+    "gate_wide": 0.615197604894638,
+    "gate_narrow_sd": 0.010295537543041283,
+    "auc": 0.841660323046258,
+    "w_narrow": 40,
+    "w_wide": 40
+   },
+   "2:1": {
+    "gate_narrow": 0.30236918330192564,
+    "gate_wide": 0.6976307690143585,
+    "gate_narrow_sd": 0.017869782725728207,
+    "auc": 0.8431633968900852,
+    "w_narrow": 40,
+    "w_wide": 80
+   },
+   "4:1": {
+    "gate_narrow": 0.20412715822458266,
+    "gate_wide": 0.795872813463211,
+    "gate_narrow_sd": 0.014283684760038284,
+    "auc": 0.8297977418126949,
+    "w_narrow": 40,
+    "w_wide": 160
+   },
+   "8:1": {
+    "gate_narrow": 0.1610956147313118,
+    "gate_wide": 0.8389043807983398,
+    "gate_narrow_sd": 0.00946717392207366,
+    "auc": 0.8252813290979782,
+    "w_narrow": 20,
+    "w_wide": 160
+   },
+   "16:1": {
+    "gate_narrow": 0.13337031453847886,
+    "gate_wide": 0.8666296541690827,
+    "gate_narrow_sd": 0.008901795088443715,
+    "auc": 0.8290354646834569,
+    "w_narrow": 10,
+    "w_wide": 160
+   }
+  }
+ },
+ "mosei_gate_for_reference": {
+  "text": 0.4924,
+  "visual": 0.2161,
+  "audio": 0.2915
+ },
+ "mosei_widths": {
+  "text": 600,
+  "visual": 70,
+  "audio": 148
+ }
+}

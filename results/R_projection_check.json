@@ -1,0 +1,403 @@
+{
+ "question": "gamma(ALL) more than doubled when a second informative modality was added, which information cannot do; is R(c) therefore a projection artefact?",
+ "partA_super_additivity": [
+  {
+   "d": 16,
+   "evr": 0.15994050353765488,
+   "gamma_all_single": 0.10998372774321825,
+   "gamma_all_dup": 0.24072883111682394,
+   "ratio": 2.1887677027901757,
+   "U_single": 0.1074126187070273,
+   "U_dup": 0.12892445793807852,
+   "paired_diff": 0.02151183923105123,
+   "se": 0.0027212861277765917,
+   "t": 7.905026601751477,
+   "p": 2.4347744358722784e-05
+  },
+  {
+   "d": 32,
+   "evr": 0.30940437614917754,
+   "gamma_all_single": 0.09628552090694605,
+   "gamma_all_dup": 0.20479715779013988,
+   "ratio": 2.1269777206488145,
+   "U_single": 0.09370308854855722,
+   "U_dup": 0.10635280247695818,
+   "paired_diff": 0.012649713928400946,
+   "se": 0.0029720532446049315,
+   "t": 4.256220493816369,
+   "p": 0.0021229289566887994
+  },
+  {
+   "d": 64,
+   "evr": 0.5851119875907898,
+   "gamma_all_single": 0.08915867069278878,
+   "gamma_all_dup": 0.17307072948297705,
+   "ratio": 1.9411542157163986,
+   "U_single": 0.08643936737124577,
+   "U_dup": 0.08742699213145133,
+   "paired_diff": 0.0009876247602055494,
+   "se": 0.0014939290247058118,
+   "t": 0.6610921562354911,
+   "p": 0.5251132873169438
+  },
+  {
+   "d": 120,
+   "evr": 0.9999999940395355,
+   "gamma_all_single": 0.0720151920934605,
+   "gamma_all_dup": 0.1407554901109169,
+   "ratio": 1.9545249553489494,
+   "U_single": 0.06995579860467147,
+   "U_dup": 0.06710584271223495,
+   "paired_diff": -0.002849955892436508,
+   "se": 0.0009881710595223703,
+   "t": -2.884071401376626,
+   "p": 0.018057829977342177
+  }
+ ],
+ "partA_projection_driven": true,
+ "partB_synthetic_R_by_d": {
+  "1 single": {
+   "R": [
+    0.8768028539396027,
+    0.9803892381299951,
+    0.9802735116304994
+   ],
+   "d": [
+    16,
+    32,
+    120
+   ],
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "truth": "independent"
+  },
+  "2 noisy-dup": {
+   "R": [
+    1.0447919053874966,
+    1.0884128890085807,
+    0.9524285364055468
+   ],
+   "d": [
+    16,
+    32,
+    120
+   ],
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "truth": "independent"
+  },
+  "3 exact-dup": {
+   "R": [
+    0.4014043951348278,
+    0.29278277771081646,
+    0.5880016065631696
+   ],
+   "d": [
+    16,
+    32,
+    120
+   ],
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "truth": "redundant"
+  },
+  "4 xor-weak": {
+   "R": [
+    1.8430920625152076,
+    1.6342620678724054,
+    1.695930052732783
+   ],
+   "d": [
+    16,
+    32,
+    120
+   ],
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "truth": "synergistic"
+  },
+  "5 xor-strong": {
+   "R": [
+    1.9922501165440387,
+    1.9880480643374712,
+    1.985272588341701
+   ],
+   "d": [
+    16,
+    32,
+    120
+   ],
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "truth": "synergistic"
+  },
+  "6 single-strong": {
+   "R": [
+    1.0024983806601346,
+    1.003914101793306,
+    0.9995410415851252
+   ],
+   "d": [
+    16,
+    32,
+    120
+   ],
+   "correct": [
+    true,
+    true,
+    true
+   ],
+   "truth": "independent"
+  }
+ },
+ "partC_real_R_by_d": {
+  "CMU-MOSEI": {
+   "happiness": {
+    "d": [
+     16,
+     32,
+     64,
+     128
+    ],
+    "R": [
+     1.055756569759696,
+     1.0615990005923592,
+     1.0830869589286791,
+     1.070129517969561
+    ],
+    "regime": [
+     "independent",
+     "independent",
+     "independent",
+     "independent"
+    ]
+   },
+   "sadness": {
+    "d": [
+     16,
+     32,
+     64,
+     128
+    ],
+    "R": [
+     1.089260436122333,
+     1.173462845357446,
+     1.2175764934675353,
+     1.2149680890983212
+    ],
+    "regime": [
+     "independent",
+     "independent",
+     "independent",
+     "independent"
+    ]
+   },
+   "anger": {
+    "d": [
+     16,
+     32,
+     64,
+     128
+    ],
+    "R": [
+     1.4583357753536506,
+     1.4808982089841034,
+     1.4008174466962384,
+     1.3686418099540385
+    ],
+    "regime": [
+     "synergistic",
+     "synergistic",
+     "synergistic",
+     "synergistic"
+    ]
+   },
+   "surprise": {
+    "d": [
+     16,
+     32,
+     64,
+     128
+    ],
+    "R": [
+     1.13751175440077,
+     1.147308670575782,
+     1.213461258721786,
+     1.2680095642409306
+    ],
+    "regime": [
+     "independent",
+     "independent",
+     "independent",
+     "independent"
+    ]
+   },
+   "disgust": {
+    "d": [
+     16,
+     32,
+     64,
+     128
+    ],
+    "R": [
+     1.0368813549668758,
+     1.077615819078691,
+     1.0506155932819805,
+     1.0281714825449604
+    ],
+    "regime": [
+     "independent",
+     "independent",
+     "independent",
+     "independent"
+    ]
+   },
+   "fear": {
+    "d": [
+     16,
+     32,
+     64,
+     128
+    ],
+    "R": [
+     1.4666816969211218,
+     1.6369354196019128,
+     1.6898581606263823,
+     1.6874516392199936
+    ],
+    "regime": [
+     "synergistic",
+     "synergistic",
+     "synergistic",
+     "synergistic"
+    ]
+   }
+  },
+  "LAN-SDN-NIDS": {
+   "DDoS": {
+    "d": [
+     10,
+     21,
+     39
+    ],
+    "R": [
+     0.12343010162131936,
+     0.12586379591627586,
+     0.12057676930641348
+    ],
+    "regime": [
+     "redundant",
+     "redundant",
+     "redundant"
+    ]
+   },
+   "Hijack": {
+    "d": [
+     10,
+     21,
+     39
+    ],
+    "R": [
+     0.14678433559841728,
+     0.17968370944567846,
+     0.16044798712123012
+    ],
+    "regime": [
+     "redundant",
+     "redundant",
+     "redundant"
+    ]
+   },
+   "Injection": {
+    "d": [
+     10,
+     21,
+     39
+    ],
+    "R": [
+     0.1943541463926858,
+     0.21412849391576483,
+     0.1885305777287337
+    ],
+    "regime": [
+     "redundant",
+     "redundant",
+     "redundant"
+    ]
+   },
+   "Linkfab": {
+    "d": [
+     10,
+     21,
+     39
+    ],
+    "R": [
+     0.1885601684757394,
+     0.23469845028338676,
+     0.21153886167821526
+    ],
+    "regime": [
+     "redundant",
+     "redundant",
+     "redundant"
+    ]
+   },
+   "Normal": {
+    "d": [
+     10,
+     21,
+     39
+    ],
+    "R": [
+     0.4054448314211137,
+     0.4526192006514307,
+     0.4164024590582029
+    ],
+    "regime": [
+     "redundant",
+     "redundant",
+     "redundant"
+    ]
+   },
+   "PortScan": {
+    "d": [
+     10,
+     21,
+     39
+    ],
+    "R": [
+     0.1640890914679615,
+     0.16941649277846035,
+     0.16315878494927147
+    ],
+    "regime": [
+     "redundant",
+     "redundant",
+     "redundant"
+    ]
+   }
+  }
+ },
+ "regime_thresholds": {
+  "redundant": "<0.70",
+  "independent": "0.70-1.30",
+  "synergistic": ">1.30"
+ },
+ "withdrawn_claim": "R(c) predicts total removal cost within a corpus. MOSEI rho -0.714 (wrong sign), SDN +0.086, pooled -0.314. Within a corpus all classes share one regime so there is no variation at n=6, and sum-cost is F1 on SDN vs AUC on MOSEI, not a common axis.",
+ "unaffected": "every U* comparison holds the configuration and d fixed, so arms A-D and both real-data results are not exposed to this"
+}

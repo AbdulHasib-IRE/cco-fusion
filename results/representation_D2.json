@@ -1,0 +1,22 @@
+{
+ "d_primary": 32,
+ "d_sweep": [
+  16,
+  32,
+  64
+ ],
+ "variance_retained": {
+  "text": 0.5030096769332886,
+  "visual": 0.9411604404449463,
+  "audio": 0.8288258910179138
+ },
+ "dim_ceiling": 70,
+ "device": "cuda",
+ "k": 5,
+ "T": 600,
+ "not_found_rate": 0.0,
+ "revalidation_mean_abs_error": 0.02344065955828691,
+ "xor_estimate": 0.9996180095660828,
+ "n_segments": 23236,
+ "n_videos": 3290
+}

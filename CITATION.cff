@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "Class-conditional observability for multimodal fusion: code and results"
+message: "If you use this software or its result files, please cite both the deposit and the article."
+type: software
+authors:
+  - family-names: Hasib
+    given-names: Abdul
+    email: sm.abdulhasib.bd@gmail.com
+    orcid: "https://orcid.org/0009-0000-6630-4240"
+    affiliation: "Department of Internet of Things and Robotics Engineering, University of Frontier Technology, Bangladesh"
+  - family-names: Ahmed
+    given-names: Md. Faishal
+    email: faishalahmed003@gmail.com
+    orcid: "https://orcid.org/0009-0006-3819-5677"
+    affiliation: "Department of Internet of Things and Robotics Engineering, University of Frontier Technology, Bangladesh"
+  - family-names: Khan
+    given-names: Arjina Nasrin
+    email: arjinanasrinkhan@gmail.com
+    orcid: "https://orcid.org/0009-0007-6143-8558"
+    affiliation: "Department of Internet of Things and Robotics Engineering, University of Frontier Technology, Bangladesh"
+license: MIT
+repository-code: "https://github.com/GITHUB_USER/cco-fusion"
+keywords:
+  - multimodal fusion
+  - modality selection
+  - mutual information
+  - attention mechanisms
+  - feature dimensionality

@@ -1,0 +1,1480 @@
+{
+ "reference": "He et al., Efficient Modality Selection in Multimodal Learning, JMLR 25 (2024); procedure held fixed, gain function varied",
+ "note": "AUCs read from stored per-configuration values; no classifier refitted. gamma(c,S) computed over all non-empty modality subsets, 5 seeds, d=32.",
+ "gamma_subsets_mosei": {
+  "happiness|text": 0.09894615277593247,
+  "sadness|text": 0.0626359517655017,
+  "anger|text": 0.0889652916608278,
+  "surprise|text": 0.059046037561576434,
+  "disgust|text": 0.19858353048379018,
+  "fear|text": 0.03895756042019027,
+  "happiness|visual": 0.2757085018380487,
+  "sadness|visual": 0.17050095631901566,
+  "anger|visual": 0.2704211984334006,
+  "surprise|visual": 0.07390516842339995,
+  "disgust|visual": 0.2277086555740489,
+  "fear|visual": 0.11205460999468808,
+  "happiness|audio": 0.27115453128710765,
+  "sadness|audio": 0.175172506106865,
+  "anger|audio": 0.2913121624340218,
+  "surprise|audio": 0.06794482870187543,
+  "disgust|audio": 0.2486311009123084,
+  "fear|audio": 0.1289833523153411,
+  "happiness|text+visual": 0.17110498041339614,
+  "sadness|text+visual": 0.09245297027664627,
+  "anger|text+visual": 0.12258938690724844,
+  "surprise|text+visual": 0.07467545205083607,
+  "disgust|text+visual": 0.20469497292689226,
+  "fear|text+visual": 0.05717786930030451,
+  "happiness|text+audio": 0.1486131618812749,
+  "sadness|text+audio": 0.09755299415792804,
+  "anger|text+audio": 0.13460376108945774,
+  "surprise|text+audio": 0.06868178788279862,
+  "disgust|text+audio": 0.21341425350221638,
+  "fear|text+audio": 0.08518506765052487,
+  "happiness|visual+audio": 0.2958373837671796,
+  "sadness|visual+audio": 0.19412821649943268,
+  "anger|visual+audio": 0.3008158460911627,
+  "surprise|visual+audio": 0.07976523064057223,
+  "disgust|visual+audio": 0.2571173342068702,
+  "fear|visual+audio": 0.1459465673616657,
+  "happiness|text+visual+audio": 0.19883812941092957,
+  "sadness|text+visual+audio": 0.11398698090946287,
+  "anger|text+visual+audio": 0.16859958785792478,
+  "surprise|text+visual+audio": 0.07583793523808485,
+  "disgust|text+visual+audio": 0.2263469345598897,
+  "fear|text+visual+audio": 0.0999251013407681
+ },
+ "gamma_subsets_tcga": {
+  "TCGA-BLCA|protein": 0.8974739686720918,
+  "TCGA-BRCA|protein": 0.9423227126752337,
+  "TCGA-CESC|protein": 0.9029983623093409,
+  "TCGA-COAD|protein": 0.9417650463110597,
+  "TCGA-HNSC|protein": 0.9171081991918124,
+  "TCGA-KIRC|protein": 0.9994794393504624,
+  "TCGA-KIRP|protein": 0.9720675666799685,
+  "TCGA-LGG|protein": 0.9950060578751259,
+  "TCGA-LIHC|protein": 0.921568620556483,
+  "TCGA-LUAD|protein": 0.8740090423082938,
+  "TCGA-LUSC|protein": 0.8383175046304088,
+  "TCGA-OV|protein": 0.9591000431430482,
+  "TCGA-PRAD|protein": 0.9880433170058682,
+  "TCGA-SARC|protein": 0.9511625952757312,
+  "TCGA-SKCM|protein": 0.9543440695778209,
+  "TCGA-STAD|protein": 0.9540751774764974,
+  "TCGA-THCA|protein": 0.9927523903093662,
+  "TCGA-UCEC|protein": 0.9304085094145368,
+  "TCGA-BLCA|miRNA": 0.8638778702414325,
+  "TCGA-BRCA|miRNA": 0.9536636966784282,
+  "TCGA-CESC|miRNA": 0.736343674311772,
+  "TCGA-COAD|miRNA": 0.9220910035853086,
+  "TCGA-HNSC|miRNA": 0.8435279970029093,
+  "TCGA-KIRC|miRNA": 0.9627649506400993,
+  "TCGA-KIRP|miRNA": 0.9443295035466095,
+  "TCGA-LGG|miRNA": 0.9987756584828954,
+  "TCGA-LIHC|miRNA": 0.964246085806377,
+  "TCGA-LUAD|miRNA": 0.8701150449198776,
+  "TCGA-LUSC|miRNA": 0.7860142590972946,
+  "TCGA-OV|miRNA": 1.0,
+  "TCGA-PRAD|miRNA": 0.9957227774428968,
+  "TCGA-SARC|miRNA": 0.9433785416537386,
+  "TCGA-SKCM|miRNA": 0.9788193901606512,
+  "TCGA-STAD|miRNA": 0.8880815948377417,
+  "TCGA-THCA|miRNA": 1.0,
+  "TCGA-UCEC|miRNA": 0.9408590177840468,
+  "TCGA-BLCA|cnv": 0.18880495327554334,
+  "TCGA-BRCA|cnv": 0.012130827826926914,
+  "TCGA-CESC|cnv": 0.20157834168195893,
+  "TCGA-COAD|cnv": 0.15139110581173365,
+  "TCGA-HNSC|cnv": 0.10574954969164282,
+  "TCGA-KIRC|cnv": 0.0,
+  "TCGA-KIRP|cnv": 0.4633528390733687,
+  "TCGA-LGG|cnv": 0.24336518721064615,
+  "TCGA-LIHC|cnv": 0.11844788697703754,
+  "TCGA-LUAD|cnv": 0.0,
+  "TCGA-LUSC|cnv": 0.1542151195526323,
+  "TCGA-OV|cnv": 0.08982986641457961,
+  "TCGA-PRAD|cnv": 0.3376060853540398,
+  "TCGA-SARC|cnv": 0.14502333849405732,
+  "TCGA-SKCM|cnv": 0.10254698315217478,
+  "TCGA-STAD|cnv": 0.24196233519467877,
+  "TCGA-THCA|cnv": 0.2621291493273942,
+  "TCGA-UCEC|cnv": 0.0,
+  "TCGA-BLCA|protein+miRNA": 0.9334224892087729,
+  "TCGA-BRCA|protein+miRNA": 0.9745388614338804,
+  "TCGA-CESC|protein+miRNA": 0.9167439072982082,
+  "TCGA-COAD|protein+miRNA": 0.969949297839548,
+  "TCGA-HNSC|protein+miRNA": 0.9402365080393238,
+  "TCGA-KIRC|protein+miRNA": 0.9957030329990484,
+  "TCGA-KIRP|protein+miRNA": 0.9862454889742771,
+  "TCGA-LGG|protein+miRNA": 0.9984725389929846,
+  "TCGA-LIHC|protein+miRNA": 0.9687644864935676,
+  "TCGA-LUAD|protein+miRNA": 0.9152060517145223,
+  "TCGA-LUSC|protein+miRNA": 0.8731011978356253,
+  "TCGA-OV|protein+miRNA": 1.0,
+  "TCGA-PRAD|protein+miRNA": 0.996169271173333,
+  "TCGA-SARC|protein+miRNA": 0.97125829211513,
+  "TCGA-SKCM|protein+miRNA": 0.9849108836019445,
+  "TCGA-STAD|protein+miRNA": 0.9648180797471116,
+  "TCGA-THCA|protein+miRNA": 0.9991923887279694,
+  "TCGA-UCEC|protein+miRNA": 0.9618904275256146,
+  "TCGA-BLCA|protein+cnv": 0.7527216134465456,
+  "TCGA-BRCA|protein+cnv": 0.837002559209463,
+  "TCGA-CESC|protein+cnv": 0.7737879929526786,
+  "TCGA-COAD|protein+cnv": 0.8148537560974274,
+  "TCGA-HNSC|protein+cnv": 0.8163237137746627,
+  "TCGA-KIRC|protein+cnv": 0.9730018542853724,
+  "TCGA-KIRP|protein+cnv": 0.9366213166962376,
+  "TCGA-LGG|protein+cnv": 0.9812567387729798,
+  "TCGA-LIHC|protein+cnv": 0.8399219166483715,
+  "TCGA-LUAD|protein+cnv": 0.7546382369233072,
+  "TCGA-LUSC|protein+cnv": 0.7120781397529704,
+  "TCGA-OV|protein+cnv": 0.806011492324678,
+  "TCGA-PRAD|protein+cnv": 0.9442641244312158,
+  "TCGA-SARC|protein+cnv": 0.8342591299461242,
+  "TCGA-SKCM|protein+cnv": 0.880692606285443,
+  "TCGA-STAD|protein+cnv": 0.8308156741592597,
+  "TCGA-THCA|protein+cnv": 0.9889455222710932,
+  "TCGA-UCEC|protein+cnv": 0.8126740991174675,
+  "TCGA-BLCA|miRNA+cnv": 0.768930483011208,
+  "TCGA-BRCA|miRNA+cnv": 0.8649317801681506,
+  "TCGA-CESC|miRNA+cnv": 0.6312214805812838,
+  "TCGA-COAD|miRNA+cnv": 0.8069930387640856,
+  "TCGA-HNSC|miRNA+cnv": 0.7630434912908699,
+  "TCGA-KIRC|miRNA+cnv": 0.9406765488201978,
+  "TCGA-KIRP|miRNA+cnv": 0.9152527093576138,
+  "TCGA-LGG|miRNA+cnv": 0.9947558600250035,
+  "TCGA-LIHC|miRNA+cnv": 0.8879275562599765,
+  "TCGA-LUAD|miRNA+cnv": 0.7400417040398887,
+  "TCGA-LUSC|miRNA+cnv": 0.6687476568109586,
+  "TCGA-OV|miRNA+cnv": 0.9965020346488312,
+  "TCGA-PRAD|miRNA+cnv": 0.9489140400845681,
+  "TCGA-SARC|miRNA+cnv": 0.8385683607138175,
+  "TCGA-SKCM|miRNA+cnv": 0.9442622358367634,
+  "TCGA-STAD|miRNA+cnv": 0.7439223941212278,
+  "TCGA-THCA|miRNA+cnv": 0.9967080745170902,
+  "TCGA-UCEC|miRNA+cnv": 0.8370756056463586,
+  "TCGA-BLCA|protein+miRNA+cnv": 0.8471724744325713,
+  "TCGA-BRCA|protein+miRNA+cnv": 0.9146165457445419,
+  "TCGA-CESC|protein+miRNA+cnv": 0.821537783418741,
+  "TCGA-COAD|protein+miRNA+cnv": 0.8692994575081148,
+  "TCGA-HNSC|protein+miRNA+cnv": 0.868290218233183,
+  "TCGA-KIRC|protein+miRNA+cnv": 0.9819955952271462,
+  "TCGA-KIRP|protein+miRNA+cnv": 0.9584627631069793,
+  "TCGA-LGG|protein+miRNA+cnv": 0.9989219952072557,
+  "TCGA-LIHC|protein+miRNA+cnv": 0.9364183303934734,
+  "TCGA-LUAD|protein+miRNA+cnv": 0.8199830938177406,
+  "TCGA-LUSC|protein+miRNA+cnv": 0.7673730750814928,
+  "TCGA-OV|protein+miRNA+cnv": 0.9979353188997155,
+  "TCGA-PRAD|protein+miRNA+cnv": 0.9732213082809993,
+  "TCGA-SARC|protein+miRNA+cnv": 0.9163837246801029,
+  "TCGA-SKCM|protein+miRNA+cnv": 0.9647065109774655,
+  "TCGA-STAD|protein+miRNA+cnv": 0.8445848783544655,
+  "TCGA-THCA|protein+miRNA+cnv": 0.9969973803183756,
+  "TCGA-UCEC|protein+miRNA+cnv": 0.8780660827883772
+ },
+ "selection": [
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 1,
+   "gain": "gamma-subset (He-style)",
+   "mean_auc": 0.6550598203509204,
+   "regret": 0.044471090546568726,
+   "picks_worst": 0,
+   "choices": {
+    "happiness": [
+     "visual"
+    ],
+    "sadness": [
+     "audio"
+    ],
+    "anger": [
+     "audio"
+    ],
+    "surprise": [
+     "visual"
+    ],
+    "disgust": [
+     "audio"
+    ],
+    "fear": [
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 1,
+   "gain": "U* (nullification)",
+   "mean_auc": 0.6908246300997228,
+   "regret": 0.008706280797766253,
+   "picks_worst": 1,
+   "choices": {
+    "happiness": [
+     "text"
+    ],
+    "sadness": [
+     "text"
+    ],
+    "anger": [
+     "text"
+    ],
+    "surprise": [
+     "text"
+    ],
+    "disgust": [
+     "text"
+    ],
+    "fear": [
+     "text"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 1,
+   "gain": "deletion",
+   "mean_auc": 0.6550598203509204,
+   "regret": 0.044471090546568726,
+   "picks_worst": 0,
+   "choices": {
+    "happiness": [
+     "visual"
+    ],
+    "sadness": [
+     "audio"
+    ],
+    "anger": [
+     "audio"
+    ],
+    "surprise": [
+     "visual"
+    ],
+    "disgust": [
+     "audio"
+    ],
+    "fear": [
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 1,
+   "gain": "width-matched del.",
+   "mean_auc": 0.6550598203509204,
+   "regret": 0.044471090546568726,
+   "picks_worst": 0,
+   "choices": {
+    "happiness": [
+     "visual"
+    ],
+    "sadness": [
+     "audio"
+    ],
+    "anger": [
+     "audio"
+    ],
+    "surprise": [
+     "visual"
+    ],
+    "disgust": [
+     "audio"
+    ],
+    "fear": [
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 1,
+   "gain": "marginal gamma",
+   "mean_auc": 0.6550598203509204,
+   "regret": 0.044471090546568726,
+   "picks_worst": 0,
+   "choices": {
+    "happiness": [
+     "visual"
+    ],
+    "sadness": [
+     "audio"
+    ],
+    "anger": [
+     "audio"
+    ],
+    "surprise": [
+     "visual"
+    ],
+    "disgust": [
+     "audio"
+    ],
+    "fear": [
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 1,
+   "gain": "ORACLE",
+   "mean_auc": 0.6995309108974891,
+   "regret": 0.0,
+   "picks_worst": 0,
+   "choices": {
+    "happiness": [
+     "visual"
+    ],
+    "sadness": [
+     "visual"
+    ],
+    "anger": [
+     "text"
+    ],
+    "surprise": [
+     "text"
+    ],
+    "disgust": [
+     "text"
+    ],
+    "fear": [
+     "text"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 1,
+   "gain": "RANDOM",
+   "mean_auc": 0.6595646195631696,
+   "regret": 0.039966291334319504,
+   "picks_worst": null,
+   "choices": null
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 2,
+   "gain": "gamma-subset (He-style)",
+   "mean_auc": 0.675714445235756,
+   "regret": 0.04829955530311947,
+   "picks_worst": 5,
+   "choices": {
+    "happiness": [
+     "visual",
+     "audio"
+    ],
+    "sadness": [
+     "visual",
+     "audio"
+    ],
+    "anger": [
+     "visual",
+     "audio"
+    ],
+    "surprise": [
+     "visual",
+     "audio"
+    ],
+    "disgust": [
+     "visual",
+     "audio"
+    ],
+    "fear": [
+     "visual",
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 2,
+   "gain": "U* (nullification)",
+   "mean_auc": 0.7214864953742741,
+   "regret": 0.002527505164601318,
+   "picks_worst": 0,
+   "choices": {
+    "happiness": [
+     "text",
+     "visual"
+    ],
+    "sadness": [
+     "text",
+     "audio"
+    ],
+    "anger": [
+     "text",
+     "audio"
+    ],
+    "surprise": [
+     "text",
+     "visual"
+    ],
+    "disgust": [
+     "text",
+     "audio"
+    ],
+    "fear": [
+     "text",
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 2,
+   "gain": "deletion",
+   "mean_auc": 0.675714445235756,
+   "regret": 0.04829955530311947,
+   "picks_worst": 5,
+   "choices": {
+    "happiness": [
+     "visual",
+     "audio"
+    ],
+    "sadness": [
+     "visual",
+     "audio"
+    ],
+    "anger": [
+     "visual",
+     "audio"
+    ],
+    "surprise": [
+     "visual",
+     "audio"
+    ],
+    "disgust": [
+     "visual",
+     "audio"
+    ],
+    "fear": [
+     "visual",
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 2,
+   "gain": "width-matched del.",
+   "mean_auc": 0.675714445235756,
+   "regret": 0.04829955530311947,
+   "picks_worst": 5,
+   "choices": {
+    "happiness": [
+     "visual",
+     "audio"
+    ],
+    "sadness": [
+     "visual",
+     "audio"
+    ],
+    "anger": [
+     "visual",
+     "audio"
+    ],
+    "surprise": [
+     "visual",
+     "audio"
+    ],
+    "disgust": [
+     "visual",
+     "audio"
+    ],
+    "fear": [
+     "visual",
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 2,
+   "gain": "marginal gamma",
+   "mean_auc": 0.675714445235756,
+   "regret": 0.04829955530311947,
+   "picks_worst": 5,
+   "choices": {
+    "happiness": [
+     "visual",
+     "audio"
+    ],
+    "sadness": [
+     "visual",
+     "audio"
+    ],
+    "anger": [
+     "visual",
+     "audio"
+    ],
+    "surprise": [
+     "visual",
+     "audio"
+    ],
+    "disgust": [
+     "visual",
+     "audio"
+    ],
+    "fear": [
+     "visual",
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 2,
+   "gain": "ORACLE",
+   "mean_auc": 0.7240140005388754,
+   "regret": 0.0,
+   "picks_worst": 0,
+   "choices": {
+    "happiness": [
+     "text",
+     "visual"
+    ],
+    "sadness": [
+     "text",
+     "visual"
+    ],
+    "anger": [
+     "text",
+     "visual"
+    ],
+    "surprise": [
+     "text",
+     "visual"
+    ],
+    "disgust": [
+     "text",
+     "audio"
+    ],
+    "fear": [
+     "text",
+     "audio"
+    ]
+   }
+  },
+  {
+   "corpus": "CMU-MOSEI (8.6:1)",
+   "budget": 2,
+   "gain": "RANDOM",
+   "mean_auc": 0.7037383028308438,
+   "regret": 0.020275697708031615,
+   "picks_worst": null,
+   "choices": null
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 1,
+   "gain": "gamma-subset (He-style)",
+   "mean_auc": 0.99959601799929,
+   "regret": 2.8014218825922477e-05,
+   "picks_worst": 0,
+   "choices": {
+    "TCGA-BLCA": [
+     "protein"
+    ],
+    "TCGA-BRCA": [
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein"
+    ],
+    "TCGA-COAD": [
+     "protein"
+    ],
+    "TCGA-HNSC": [
+     "protein"
+    ],
+    "TCGA-KIRC": [
+     "protein"
+    ],
+    "TCGA-KIRP": [
+     "protein"
+    ],
+    "TCGA-LGG": [
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein"
+    ],
+    "TCGA-LUSC": [
+     "protein"
+    ],
+    "TCGA-OV": [
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "protein"
+    ],
+    "TCGA-SKCM": [
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein"
+    ],
+    "TCGA-THCA": [
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 1,
+   "gain": "U* (nullification)",
+   "mean_auc": 0.9993585058929462,
+   "regret": 0.0002655263251697404,
+   "picks_worst": 0,
+   "choices": {
+    "TCGA-BLCA": [
+     "miRNA"
+    ],
+    "TCGA-BRCA": [
+     "protein"
+    ],
+    "TCGA-CESC": [
+     "protein"
+    ],
+    "TCGA-COAD": [
+     "miRNA"
+    ],
+    "TCGA-HNSC": [
+     "protein"
+    ],
+    "TCGA-KIRC": [
+     "protein"
+    ],
+    "TCGA-KIRP": [
+     "protein"
+    ],
+    "TCGA-LGG": [
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein"
+    ],
+    "TCGA-LUSC": [
+     "protein"
+    ],
+    "TCGA-OV": [
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "protein"
+    ],
+    "TCGA-SARC": [
+     "miRNA"
+    ],
+    "TCGA-SKCM": [
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "miRNA"
+    ],
+    "TCGA-THCA": [
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "protein"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 1,
+   "gain": "deletion",
+   "mean_auc": 0.9994445817804076,
+   "regret": 0.00017945043770828395,
+   "picks_worst": 0,
+   "choices": {
+    "TCGA-BLCA": [
+     "miRNA"
+    ],
+    "TCGA-BRCA": [
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein"
+    ],
+    "TCGA-COAD": [
+     "protein"
+    ],
+    "TCGA-HNSC": [
+     "protein"
+    ],
+    "TCGA-KIRC": [
+     "protein"
+    ],
+    "TCGA-KIRP": [
+     "protein"
+    ],
+    "TCGA-LGG": [
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein"
+    ],
+    "TCGA-LUSC": [
+     "protein"
+    ],
+    "TCGA-OV": [
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "miRNA"
+    ],
+    "TCGA-SKCM": [
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein"
+    ],
+    "TCGA-THCA": [
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 1,
+   "gain": "width-matched del.",
+   "mean_auc": 0.9994265361975186,
+   "regret": 0.00019749602059726534,
+   "picks_worst": 0,
+   "choices": {
+    "TCGA-BLCA": [
+     "miRNA"
+    ],
+    "TCGA-BRCA": [
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein"
+    ],
+    "TCGA-COAD": [
+     "miRNA"
+    ],
+    "TCGA-HNSC": [
+     "protein"
+    ],
+    "TCGA-KIRC": [
+     "protein"
+    ],
+    "TCGA-KIRP": [
+     "protein"
+    ],
+    "TCGA-LGG": [
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein"
+    ],
+    "TCGA-LUSC": [
+     "protein"
+    ],
+    "TCGA-OV": [
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "miRNA"
+    ],
+    "TCGA-SKCM": [
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein"
+    ],
+    "TCGA-THCA": [
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 1,
+   "gain": "marginal gamma",
+   "mean_auc": 0.99959601799929,
+   "regret": 2.8014218825922477e-05,
+   "picks_worst": 0,
+   "choices": {
+    "TCGA-BLCA": [
+     "protein"
+    ],
+    "TCGA-BRCA": [
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein"
+    ],
+    "TCGA-COAD": [
+     "protein"
+    ],
+    "TCGA-HNSC": [
+     "protein"
+    ],
+    "TCGA-KIRC": [
+     "protein"
+    ],
+    "TCGA-KIRP": [
+     "protein"
+    ],
+    "TCGA-LGG": [
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein"
+    ],
+    "TCGA-LUSC": [
+     "protein"
+    ],
+    "TCGA-OV": [
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "protein"
+    ],
+    "TCGA-SKCM": [
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein"
+    ],
+    "TCGA-THCA": [
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 1,
+   "gain": "ORACLE",
+   "mean_auc": 0.9996240322181159,
+   "regret": 0.0,
+   "picks_worst": 0,
+   "choices": {
+    "TCGA-BLCA": [
+     "protein"
+    ],
+    "TCGA-BRCA": [
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein"
+    ],
+    "TCGA-COAD": [
+     "protein"
+    ],
+    "TCGA-HNSC": [
+     "protein"
+    ],
+    "TCGA-KIRC": [
+     "protein"
+    ],
+    "TCGA-KIRP": [
+     "protein"
+    ],
+    "TCGA-LGG": [
+     "protein"
+    ],
+    "TCGA-LIHC": [
+     "protein"
+    ],
+    "TCGA-LUAD": [
+     "protein"
+    ],
+    "TCGA-LUSC": [
+     "protein"
+    ],
+    "TCGA-OV": [
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "protein"
+    ],
+    "TCGA-SKCM": [
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein"
+    ],
+    "TCGA-THCA": [
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "protein"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 1,
+   "gain": "RANDOM",
+   "mean_auc": 0.898566294429491,
+   "regret": 0.10105773778862492,
+   "picks_worst": null,
+   "choices": null
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 2,
+   "gain": "gamma-subset (He-style)",
+   "mean_auc": 0.9997348831978261,
+   "regret": 1.4451494828038314e-05,
+   "picks_worst": 1,
+   "choices": {
+    "TCGA-BLCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-BRCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-COAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-HNSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRP": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LGG": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-OV": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SKCM": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-THCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "protein",
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 2,
+   "gain": "U* (nullification)",
+   "mean_auc": 0.9997348831978261,
+   "regret": 1.4451494828038314e-05,
+   "picks_worst": 1,
+   "choices": {
+    "TCGA-BLCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-BRCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-COAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-HNSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRP": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LGG": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-OV": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SKCM": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-THCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "protein",
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 2,
+   "gain": "deletion",
+   "mean_auc": 0.9997348831978261,
+   "regret": 1.4451494828038314e-05,
+   "picks_worst": 1,
+   "choices": {
+    "TCGA-BLCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-BRCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-COAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-HNSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRP": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LGG": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-OV": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SKCM": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-THCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "protein",
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 2,
+   "gain": "width-matched del.",
+   "mean_auc": 0.9997348831978261,
+   "regret": 1.4451494828038314e-05,
+   "picks_worst": 1,
+   "choices": {
+    "TCGA-BLCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-BRCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-COAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-HNSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRP": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LGG": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-OV": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SKCM": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-THCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "protein",
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 2,
+   "gain": "marginal gamma",
+   "mean_auc": 0.9997348831978261,
+   "regret": 1.4451494828038314e-05,
+   "picks_worst": 1,
+   "choices": {
+    "TCGA-BLCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-BRCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-COAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-HNSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRP": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LGG": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-OV": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SARC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SKCM": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-THCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "protein",
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 2,
+   "gain": "ORACLE",
+   "mean_auc": 0.9997493346926541,
+   "regret": 0.0,
+   "picks_worst": 0,
+   "choices": {
+    "TCGA-BLCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-BRCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-CESC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-COAD": [
+     "miRNA",
+     "cnv"
+    ],
+    "TCGA-HNSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-KIRC": [
+     "protein",
+     "cnv"
+    ],
+    "TCGA-KIRP": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LGG": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LIHC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-LUSC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-OV": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-PRAD": [
+     "miRNA",
+     "cnv"
+    ],
+    "TCGA-SARC": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-SKCM": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-STAD": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-THCA": [
+     "protein",
+     "miRNA"
+    ],
+    "TCGA-UCEC": [
+     "protein",
+     "miRNA"
+    ]
+   }
+  },
+  {
+   "corpus": "TCGA (1:1)",
+   "budget": 2,
+   "gain": "RANDOM",
+   "mean_auc": 0.9991690179884372,
+   "regret": 0.0005803167042169877,
+   "picks_worst": null,
+   "choices": null
+  }
+ ],
+ "mean_regret_mosei": {
+  "gamma-subset (He-style)": 0.0463853229248441,
+  "U* (nullification)": 0.005616892981183785,
+  "deletion": 0.0463853229248441,
+  "width-matched del.": 0.0463853229248441,
+  "marginal gamma": 0.0463853229248441,
+  "RANDOM": 0.03012099452117556,
+  "ORACLE": 0.0
+ },
+ "mean_regret_tcga": {
+  "gamma-subset (He-style)": 2.1232856826980395e-05,
+  "U* (nullification)": 0.00013998890999888935,
+  "deletion": 9.695096626816113e-05,
+  "width-matched del.": 0.00010597375771265183,
+  "marginal gamma": 2.1232856826980395e-05,
+  "RANDOM": 0.050819027246420956,
+  "ORACLE": 0.0
+ }
+}

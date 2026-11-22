@@ -1,0 +1,116 @@
+{
+ "generated": "2026-11-22T13:27:36Z",
+ "project": "class-conditional observability, multimodal fusion",
+ "target": "Information Fusion (Elsevier), subscription route",
+ "supersedes": "FIGDATA.json, which predates main_table_50seed.json, calibration_50seed.json, second_learner_D2.json, third_learner_D2.json and the five gate files",
+ "void_never_cite": [
+  "conditional_gamma_D2.json",
+  "conditional_gamma_D3.json",
+  "width_matched_U.json",
+  "gate1_D2_MOSEI.json",
+  "cost_5seed_D3.json",
+  "gamma_vs_cost_D3.json",
+  "operator_width_comparison.json"
+ ],
+ "void_reasons": {
+  "operator_width_comparison.json": "its 5 datasets were shared across operators and shared generator seeds; superseded by main_table_50seed.json",
+  "width_matched_U.json": "arm confounded by compressibility; later shown to fail at 1:1 where no width imbalance exists",
+  "conditional_gamma_D2.json": "superseded",
+  "conditional_gamma_D3.json": "superseded",
+  "gate1_D2_MOSEI.json": "superseded by gate1_D2_MOSEI_corrected.json",
+  "cost_5seed_D3.json": "SDN disqualified as a cost corpus",
+  "gamma_vs_cost_D3.json": "SDN disqualified as a cost corpus"
+ },
+ "excluded_large": {
+  "discount_D2_partial.json": "intermediate, ~41 MB, not needed for figures"
+ },
+ "file_sizes_kb": {
+  "MASTER_results.json": 17.3232421875,
+  "R_projection_check.json": 8.171875,
+  "Ustar_width_residual.json": 7.7509765625,
+  "bias_scaling_law.json": 3.662109375,
+  "calibration_50seed.json": 3.298828125,
+  "contextual_discounting_D2.json": 3.970703125,
+  "cost_5seed_D2.json": 14.0126953125,
+  "cost_5seed_D2_partial.json": 9.31640625,
+  "cost_5seed_D3_partial.json": 16.4814453125,
+  "cost_full_D3.json": 18.134765625,
+  "cost_full_D3_partial.json": 11.650390625,
+  "dependence_D3_SDN.json": 1.7431640625,
+  "dependence_diagnostic_D1.json": 1.6923828125,
+  "estimator_family_and_nongauss.json": 4.5400390625,
+  "estimator_validation.json": 2.0087890625,
+  "figure_manifest.json": 1.1279296875,
+  "gate1_D2_MOSEI_corrected.json": 5.2880859375,
+  "gate1_D3_SDN.json": 14.7392578125,
+  "gate1_predictive_D2.json": 6.162109375,
+  "gate_family_generality.json": 150.2119140625,
+  "gate_mechanism_remedy.json": 8.19921875,
+  "gate_rank_cap_remedy.json": 11.6806640625,
+  "gate_rank_vs_params.json": 9.59375,
+  "gate_width_confound.json": 4.59765625,
+  "main_table_50seed.json": 82.234375,
+  "modality_selection.json": 32.0205078125,
+  "mosei_feature_structure.json": 0.4013671875,
+  "nullification_U.json": 19.681640625,
+  "nullification_U_5seed.json": 20.412109375,
+  "operator_O5_equalise.json": 4.896484375,
+  "pairwise_D3_SDN.json": 27.4404296875,
+  "pid_pipeline_check.json": 3.1484375,
+  "pid_width_artefact.json": 5.4091796875,
+  "regime_ratio.json": 7.130859375,
+  "representation_D2.json": 0.4052734375,
+  "sdn_instability.json": 2.4609375,
+  "second_learner_D2.json": 6.6982421875,
+  "sensitivity_and_label_null.json": 2.822265625,
+  "shapley_comparison.json": 6.185546875,
+  "spec_D3_SDN.json": 2.5859375,
+  "spec_D4_TCGA.json": 3.138671875,
+  "synthetic_groundtruth.json": 16.5859375,
+  "synthetic_redundancy_synergy.json": 4.4677734375,
+  "tcga_operators_costs.json": 23.7607421875,
+  "tcga_protein_sensitivity.json": 3.06640625,
+  "tcga_url_discovery.json": 1.6484375,
+  "third_learner_D2.json": 6.0986328125,
+  "uncertainty_and_nulls.json": 2.4931640625,
+  "width_equalisation_mosei.json": 10.4716796875
+ },
+ "corpora": {
+  "CMU-MOSEI": {
+   "n": 23236,
+   "videos": 3290,
+   "widths": {
+    "text": 600,
+    "visual": 70,
+    "audio": 148
+   },
+   "n_eff": 6147,
+   "role": "applied claim"
+  },
+  "TCGA": {
+   "n": 6246,
+   "widths": 200,
+   "role": "correlation only, no cost headroom"
+  },
+  "LAN-SDN-NIDS": {
+   "n": 1125059,
+   "role": "replication only"
+  }
+ },
+ "precedence": {
+  "operator comparison / sign errors": "main_table_50seed.json",
+  "U* calibration by width ratio": "calibration_50seed.json",
+  "MOSEI removal costs (HistGB)": "cost_5seed_D2.json",
+  "MOSEI removal costs (logistic)": "second_learner_D2.json",
+  "MOSEI removal costs (gated NN)": "third_learner_D2.json",
+  "gate width confound": "gate_width_confound.json",
+  "gate mechanism": "gate_rank_vs_params.json",
+  "gate remedy": "gate_rank_cap_remedy.json",
+  "gate generality + seed-level test": "gate_family_generality.json"
+ },
+ "stale_blocks_removed": [
+  "MASTER_results.json::operators -> main_table_50seed.json",
+  "MASTER_results.json::U_calibration_by_width_ratio -> calibration_50seed.json"
+ ],
+ "_rule": "Single source of truth per claim is given by \"precedence\". Superseded blocks have been physically removed, not just flagged."
+}

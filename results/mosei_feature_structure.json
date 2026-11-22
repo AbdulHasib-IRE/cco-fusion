@@ -1,0 +1,20 @@
+{
+ "dims": {
+  "text": 300,
+  "visual": 35,
+  "audio": 74
+ },
+ "n_videos": {
+  "text": 3837,
+  "visual": 3837,
+  "audio": 3836
+ },
+ "n_common": 3292,
+ "coverage": 0.9996963255390222,
+ "nonfinite_fraction": {
+  "text": 0.0,
+  "visual": 0.0,
+  "audio": 1.8122464673573317e-06
+ },
+ "skipped": "CMU_MOSEI_OpenFace2.csd (16.7 GB) - FACET is the standard visual stream in this literature"
+}

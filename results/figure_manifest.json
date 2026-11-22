@@ -1,0 +1,68 @@
+{
+ "panels": [
+  {
+   "file": "fig01a.png",
+   "MB": 0.250282
+  },
+  {
+   "file": "fig01b.png",
+   "MB": 0.206361
+  },
+  {
+   "file": "fig02a.png",
+   "MB": 0.301
+  },
+  {
+   "file": "fig02b.png",
+   "MB": 0.19638
+  },
+  {
+   "file": "fig03a.png",
+   "MB": 0.177512
+  },
+  {
+   "file": "fig03b.png",
+   "MB": 0.190881
+  },
+  {
+   "file": "fig04a.png",
+   "MB": 0.295982
+  },
+  {
+   "file": "fig04b.png",
+   "MB": 0.152541
+  },
+  {
+   "file": "fig05a.png",
+   "MB": 0.206574
+  },
+  {
+   "file": "fig05b.png",
+   "MB": 0.259243
+  },
+  {
+   "file": "fig06a.png",
+   "MB": 0.190479
+  },
+  {
+   "file": "fig06b.png",
+   "MB": 0.311236
+  },
+  {
+   "file": "fig07a.png",
+   "MB": 0.320494
+  },
+  {
+   "file": "fig07b.png",
+   "MB": 0.174632
+  }
+ ],
+ "dpi": 1000,
+ "panel_size_inches": [
+  3.3,
+  2.5
+ ],
+ "latex": "one PNG per panel, side-by-side (a)/(b) subfigures, width=.48\\columnwidth, bare filenames",
+ "provenance": "all values from results files that passed the cell-46 audit; nothing recomputed here",
+ "_NOTE": "Colab working plots only. Submission figures are rebuilt in Claude's environment per standing preference; this manifest is retained for panel-naming and layout reference, not as the figure set."
+}

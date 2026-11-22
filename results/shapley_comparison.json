@@ -1,0 +1,223 @@
+{
+ "definition": "exact Shapley over 2^M subset performances; v(empty) = 0.5 chance AUC",
+ "efficiency_max_violation": 0.0,
+ "shapley_mosei": {
+  "happiness|text": 0.09076538467057627,
+  "happiness|visual": 0.12002385364466726,
+  "happiness|audio": 0.06612989087420129,
+  "sadness|text": 0.06908537072041256,
+  "sadness|visual": 0.07268370049080698,
+  "sadness|audio": 0.06613794831217985,
+  "anger|text": 0.09673382472860033,
+  "anger|visual": 0.0674427587799505,
+  "anger|audio": 0.06462264705318584,
+  "surprise|text": 0.11752814754768898,
+  "surprise|visual": 0.03759064741195011,
+  "surprise|audio": 0.026778020766906607,
+  "disgust|text": 0.16980007962416613,
+  "disgust|visual": 0.06040108286659488,
+  "disgust|audio": 0.0754964057662058,
+  "fear|text": 0.0979230421426652,
+  "fear|visual": 0.037038579657524086,
+  "fear|audio": 0.055771350059277726
+ },
+ "shapley_tcga": {
+  "TCGA-BLCA|protein": 0.22394621689965374,
+  "TCGA-BLCA|miRNA": 0.22278977191514876,
+  "TCGA-BLCA|cnv": 0.052982633779075826,
+  "TCGA-BRCA|protein": 0.2263707344216006,
+  "TCGA-BRCA|miRNA": 0.2264251171160038,
+  "TCGA-BRCA|cnv": 0.047150294361899825,
+  "TCGA-CESC|protein": 0.22576220796605825,
+  "TCGA-CESC|miRNA": 0.22060789995062116,
+  "TCGA-CESC|cnv": 0.053456597925248574,
+  "TCGA-COAD|protein": 0.21535204690353602,
+  "TCGA-COAD|miRNA": 0.21519323283817518,
+  "TCGA-COAD|cnv": 0.06882240384956978,
+  "TCGA-HNSC|protein": 0.21452448742438454,
+  "TCGA-HNSC|miRNA": 0.21383676053698983,
+  "TCGA-HNSC|cnv": 0.07161406416237777,
+  "TCGA-KIRC|protein": 0.21285089329294063,
+  "TCGA-KIRC|miRNA": 0.21084345081563677,
+  "TCGA-KIRC|cnv": 0.07630138105877347,
+  "TCGA-KIRP|protein": 0.21178415362890937,
+  "TCGA-KIRP|miRNA": 0.20634511299360428,
+  "TCGA-KIRP|cnv": 0.08151021959639537,
+  "TCGA-LGG|protein": 0.2091941875327362,
+  "TCGA-LGG|miRNA": 0.20918916182364697,
+  "TCGA-LGG|cnv": 0.08161585032348871,
+  "TCGA-LIHC|protein": 0.2315242341227269,
+  "TCGA-LIHC|miRNA": 0.23145360074791396,
+  "TCGA-LIHC|cnv": 0.03696639775824813,
+  "TCGA-LUAD|protein": 0.2331190153496069,
+  "TCGA-LUAD|miRNA": 0.23161029716110898,
+  "TCGA-LUAD|cnv": 0.03415690152888088,
+  "TCGA-LUSC|protein": 0.21704612908693843,
+  "TCGA-LUSC|miRNA": 0.21106104418198876,
+  "TCGA-LUSC|cnv": 0.0699648027270313,
+  "TCGA-OV|protein": 0.19417485282704466,
+  "TCGA-OV|miRNA": 0.19421862629827297,
+  "TCGA-OV|cnv": 0.11160652087468233,
+  "TCGA-PRAD|protein": 0.2167472282204492,
+  "TCGA-PRAD|miRNA": 0.21704265363950376,
+  "TCGA-PRAD|cnv": 0.06618936369675714,
+  "TCGA-SARC|protein": 0.2285248232859946,
+  "TCGA-SARC|miRNA": 0.2270461959315761,
+  "TCGA-SARC|cnv": 0.04437722785035998,
+  "TCGA-SKCM|protein": 0.22117851410173286,
+  "TCGA-SKCM|miRNA": 0.22206367191636686,
+  "TCGA-SKCM|cnv": 0.05674804681837429,
+  "TCGA-STAD|protein": 0.21329675976240028,
+  "TCGA-STAD|miRNA": 0.21197563938840358,
+  "TCGA-STAD|cnv": 0.07470909407632957,
+  "TCGA-THCA|protein": 0.19655140925754466,
+  "TCGA-THCA|miRNA": 0.1965800303543333,
+  "TCGA-THCA|cnv": 0.10686817737109702,
+  "TCGA-UCEC|protein": 0.2237586057983477,
+  "TCGA-UCEC|miRNA": 0.22330053048467516,
+  "TCGA-UCEC|cnv": 0.052791940406556194
+ },
+ "agreement": [
+  {
+   "corpus": "CMU-MOSEI",
+   "index": "U* (nullification)",
+   "overall": [
+    0.7688338493292053,
+    0.0001926187299802615
+   ],
+   "within_class": [
+    0.5833333333333335,
+    0.011048280869218146
+   ],
+   "within_modality": [
+    0.3904761904761905,
+    0.10913871920810574
+   ]
+  },
+  {
+   "corpus": "CMU-MOSEI",
+   "index": "deletion",
+   "overall": [
+    -0.2776057791537668,
+    0.26470972815378374
+   ],
+   "within_class": [
+    -0.41666666666666674,
+    0.08541463077839107
+   ],
+   "within_modality": [
+    0.48571428571428565,
+    0.04100225759171928
+   ]
+  },
+  {
+   "corpus": "CMU-MOSEI",
+   "index": "width-matched del.",
+   "overall": [
+    -0.3106295149638803,
+    0.20962534083657886
+   ],
+   "within_class": [
+    -0.41666666666666674,
+    0.08541463077839107
+   ],
+   "within_modality": [
+    0.4666666666666666,
+    0.05090075084822322
+   ]
+  },
+  {
+   "corpus": "CMU-MOSEI",
+   "index": "marginal gamma",
+   "overall": [
+    -0.021671826625386997,
+    0.9319797351987382
+   ],
+   "within_class": [
+    -0.41666666666666674,
+    0.08541463077839107
+   ],
+   "within_modality": [
+    0.4476190476190475,
+    0.06250521690479136
+   ]
+  },
+  {
+   "corpus": "TCGA",
+   "index": "U* (nullification)",
+   "overall": [
+    0.7584143319992376,
+    3.0845328335132884e-11
+   ],
+   "within_class": [
+    0.7777777777777779,
+    4.562217079077873e-12
+   ],
+   "within_modality": [
+    0.3498452012383901,
+    0.00950919151780237
+   ]
+  },
+  {
+   "corpus": "TCGA",
+   "index": "deletion",
+   "overall": [
+    0.8341909662664378,
+    4.7479602083884044e-15
+   ],
+   "within_class": [
+    0.8611111111111113,
+    6.721478642460884e-17
+   ],
+   "within_modality": [
+    0.4943240454076367,
+    0.00014519725884772685
+   ]
+  },
+  {
+   "corpus": "TCGA",
+   "index": "width-matched del.",
+   "overall": [
+    0.827024966647608,
+    1.2990165934931783e-14
+   ],
+   "within_class": [
+    0.8333333333333334,
+    5.36913676572207e-15
+   ],
+   "within_modality": [
+    0.49707602339181284,
+    0.00013152098240091129
+   ]
+  },
+  {
+   "corpus": "TCGA",
+   "index": "marginal gamma",
+   "overall": [
+    0.5508053012719262,
+    1.5913465157618287e-05
+   ],
+   "within_class": [
+    0.9166666666666667,
+    2.320716037711224e-22
+   ],
+   "within_modality": [
+    -0.20206035909623674,
+    0.14285202591596655
+   ]
+  }
+ ],
+ "mosei_U_vs_shapley": {
+  "rho": 0.7688338493292053,
+  "ci": [
+   0.4106583072100313,
+   0.9293873312564902
+  ]
+ },
+ "cost": {
+  "shapley_fits": 1050,
+  "shapley_minutes_measured": 75.25,
+  "U_seconds": 8.4,
+  "scaling": "Shapley is 2^M; U* is M nullifications"
+ }
+}

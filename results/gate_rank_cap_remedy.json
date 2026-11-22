@@ -1,0 +1,372 @@
+{
+ "mechanism": "gate tracks effective embedding rank; rank is bounded by input width (gate_rank_vs_params.json)",
+ "remedy_tested": "low-rank bottleneck k = min_m min(w_m, h) in every encoder",
+ "prediction_stated_before_running": "arm A parity, arm B above parity, AUC penalty below pad-noise's 0.010-0.015",
+ "note_on_pad_noise": "pad-noise is a diagnostic that exposes the mechanism, not a recommendation: it costs AUC",
+ "modes": [
+  "plain",
+  "rank-cap",
+  "pad-noise"
+ ],
+ "arms": {
+  "A equal info": [
+   1.0,
+   1.0
+  ],
+  "B narrow 9x power": [
+   1.5,
+   0.5
+  ]
+ },
+ "n_seeds": 10,
+ "n": 8000,
+ "epochs": 25,
+ "hidden": 64,
+ "pairs": [
+  [
+   40,
+   40
+  ],
+  [
+   40,
+   80
+  ],
+  [
+   40,
+   160
+  ],
+  [
+   20,
+   160
+  ],
+  [
+   10,
+   160
+  ]
+ ],
+ "labels": [
+  "1:1",
+  "2:1",
+  "4:1",
+  "8:1",
+  "16:1"
+ ],
+ "results": {
+  "A equal info": {
+   "plain": {
+    "1:1": {
+     "gate_narrow": 0.5083931505680084,
+     "gate_narrow_sd": 0.014878600734773506,
+     "auc": 0.8115856264675937,
+     "auc_sd": 0.008893699190844357,
+     "eff_rank_narrow": 23.43420543670654,
+     "eff_rank_wide": 23.51926498413086,
+     "bottleneck_k": null,
+     "total_params": 13698
+    },
+    "2:1": {
+     "gate_narrow": 0.4277748942375183,
+     "gate_narrow_sd": 0.017391803724500412,
+     "auc": 0.8108357236846839,
+     "auc_sd": 0.007463955581059082,
+     "eff_rank_narrow": 23.28098831176758,
+     "eff_rank_wide": 35.79134254455566,
+     "bottleneck_k": null,
+     "total_params": 16258
+    },
+    "4:1": {
+     "gate_narrow": 0.3207146883010864,
+     "gate_narrow_sd": 0.01373841452794936,
+     "auc": 0.7890794786904777,
+     "auc_sd": 0.010836971603053545,
+     "eff_rank_narrow": 21.958209228515624,
+     "eff_rank_wide": 47.661838150024415,
+     "bottleneck_k": null,
+     "total_params": 21378
+    },
+    "8:1": {
+     "gate_narrow": 0.28380573987960817,
+     "gate_narrow_sd": 0.007061083484098948,
+     "auc": 0.7873223513795516,
+     "auc_sd": 0.0106057499095881,
+     "eff_rank_narrow": 14.161779499053955,
+     "eff_rank_wide": 47.50242881774902,
+     "bottleneck_k": null,
+     "total_params": 20098
+    },
+    "16:1": {
+     "gate_narrow": 0.2643126219511032,
+     "gate_narrow_sd": 0.013587811669771716,
+     "auc": 0.7927464098891345,
+     "auc_sd": 0.010780721901903706,
+     "eff_rank_narrow": 9.830658531188964,
+     "eff_rank_wide": 47.66100234985352,
+     "bottleneck_k": null,
+     "total_params": 19458
+    }
+   },
+   "rank-cap": {
+    "1:1": {
+     "gate_narrow": 0.5069808751344681,
+     "gate_narrow_sd": 0.01575613791617297,
+     "auc": 0.8095601485916145,
+     "auc_sd": 0.008888393930619949,
+     "eff_rank_narrow": 9.847247219085693,
+     "eff_rank_wide": 9.684548664093018,
+     "bottleneck_k": 40,
+     "total_params": 16898
+    },
+    "2:1": {
+     "gate_narrow": 0.4581245452165604,
+     "gate_narrow_sd": 0.020864259914640935,
+     "auc": 0.8130884184767639,
+     "auc_sd": 0.0075046508677860365,
+     "eff_rank_narrow": 9.540256786346436,
+     "eff_rank_wide": 12.53039846420288,
+     "bottleneck_k": 40,
+     "total_params": 18498
+    },
+    "4:1": {
+     "gate_narrow": 0.3930982857942581,
+     "gate_narrow_sd": 0.024816419497622078,
+     "auc": 0.7886114505697799,
+     "auc_sd": 0.010067663001552237,
+     "eff_rank_narrow": 9.41094479560852,
+     "eff_rank_wide": 17.160488510131835,
+     "bottleneck_k": 40,
+     "total_params": 21698
+    },
+    "8:1": {
+     "gate_narrow": 0.4259078145027161,
+     "gate_narrow_sd": 0.02161647140363988,
+     "auc": 0.7976693128681696,
+     "auc_sd": 0.011197178250606687,
+     "eff_rank_narrow": 5.891716146469117,
+     "eff_rank_wide": 11.291777324676513,
+     "bottleneck_k": 20,
+     "total_params": 14738
+    },
+    "16:1": {
+     "gate_narrow": 0.47294664978981016,
+     "gate_narrow_sd": 0.017673937357278017,
+     "auc": 0.8132306629779201,
+     "auc_sd": 0.007515432324153772,
+     "eff_rank_narrow": 4.790431261062622,
+     "eff_rank_wide": 6.704607343673706,
+     "bottleneck_k": 10,
+     "total_params": 11558
+    }
+   },
+   "pad-noise": {
+    "1:1": {
+     "gate_narrow": 0.5083931505680084,
+     "gate_narrow_sd": 0.014878600734773506,
+     "auc": 0.8115856264675937,
+     "auc_sd": 0.008893699190844357,
+     "eff_rank_narrow": 23.43420543670654,
+     "eff_rank_wide": 23.51926498413086,
+     "bottleneck_k": null,
+     "total_params": 13698
+    },
+    "2:1": {
+     "gate_narrow": 0.5059313476085663,
+     "gate_narrow_sd": 0.015832149057087155,
+     "auc": 0.8031144699887454,
+     "auc_sd": 0.007834528809487377,
+     "eff_rank_narrow": 36.78981475830078,
+     "eff_rank_wide": 35.10025119781494,
+     "bottleneck_k": null,
+     "total_params": 18818
+    },
+    "4:1": {
+     "gate_narrow": 0.5139319151639938,
+     "gate_narrow_sd": 0.010152205260478173,
+     "auc": 0.7814229555763854,
+     "auc_sd": 0.010719076603981853,
+     "eff_rank_narrow": 46.392643737792966,
+     "eff_rank_wide": 44.346316528320315,
+     "bottleneck_k": null,
+     "total_params": 29058
+    },
+    "8:1": {
+     "gate_narrow": 0.5133278340101242,
+     "gate_narrow_sd": 0.014401841830027094,
+     "auc": 0.7756250424735621,
+     "auc_sd": 0.01157440978948266,
+     "eff_rank_narrow": 46.75371475219727,
+     "eff_rank_wide": 44.431727981567384,
+     "bottleneck_k": null,
+     "total_params": 29058
+    },
+    "16:1": {
+     "gate_narrow": 0.5320372760295868,
+     "gate_narrow_sd": 0.010189250406007426,
+     "auc": 0.7786297141723814,
+     "auc_sd": 0.012143163316573268,
+     "eff_rank_narrow": 48.02339477539063,
+     "eff_rank_wide": 44.11422119140625,
+     "bottleneck_k": null,
+     "total_params": 29058
+    }
+   }
+  },
+  "B narrow 9x power": {
+   "plain": {
+    "1:1": {
+     "gate_narrow": 0.6375706970691681,
+     "gate_narrow_sd": 0.025984258728273736,
+     "auc": 0.8444764052254641,
+     "auc_sd": 0.009327207343479282,
+     "eff_rank_narrow": 15.053082180023193,
+     "eff_rank_wide": 30.712890434265137,
+     "bottleneck_k": null,
+     "total_params": 13698
+    },
+    "2:1": {
+     "gate_narrow": 0.5411490797996521,
+     "gate_narrow_sd": 0.029350150940257582,
+     "auc": 0.8390729040844842,
+     "auc_sd": 0.011210133042897344,
+     "eff_rank_narrow": 14.952088737487793,
+     "eff_rank_wide": 41.73822441101074,
+     "bottleneck_k": null,
+     "total_params": 16258
+    },
+    "4:1": {
+     "gate_narrow": 0.4282141387462616,
+     "gate_narrow_sd": 0.023001859364197123,
+     "auc": 0.8211986883286959,
+     "auc_sd": 0.013735782480929118,
+     "eff_rank_narrow": 14.259465312957763,
+     "eff_rank_wide": 49.745351028442386,
+     "bottleneck_k": null,
+     "total_params": 21378
+    },
+    "8:1": {
+     "gate_narrow": 0.42449016869068146,
+     "gate_narrow_sd": 0.016836614095411623,
+     "auc": 0.8191408763099147,
+     "auc_sd": 0.01008563209148381,
+     "eff_rank_narrow": 10.4645414352417,
+     "eff_rank_wide": 49.202959060668945,
+     "bottleneck_k": null,
+     "total_params": 20098
+    },
+    "16:1": {
+     "gate_narrow": 0.42762048840522765,
+     "gate_narrow_sd": 0.028222081295499243,
+     "auc": 0.8289515081219113,
+     "auc_sd": 0.008577905594486377,
+     "eff_rank_narrow": 8.20516505241394,
+     "eff_rank_wide": 49.26883964538574,
+     "bottleneck_k": null,
+     "total_params": 19458
+    }
+   },
+   "rank-cap": {
+    "1:1": {
+     "gate_narrow": 0.614462924003601,
+     "gate_narrow_sd": 0.021149099174129087,
+     "auc": 0.8441037057965225,
+     "auc_sd": 0.00914332340630731,
+     "eff_rank_narrow": 5.509449291229248,
+     "eff_rank_wide": 17.32654685974121,
+     "bottleneck_k": 40,
+     "total_params": 16898
+    },
+    "2:1": {
+     "gate_narrow": 0.5655862510204315,
+     "gate_narrow_sd": 0.03196605197223492,
+     "auc": 0.8400028549564122,
+     "auc_sd": 0.010050414690050195,
+     "eff_rank_narrow": 5.110532236099243,
+     "eff_rank_wide": 20.49494915008545,
+     "bottleneck_k": 40,
+     "total_params": 18498
+    },
+    "4:1": {
+     "gate_narrow": 0.5163007020950318,
+     "gate_narrow_sd": 0.03299081181118152,
+     "auc": 0.818046059912667,
+     "auc_sd": 0.011805347297881862,
+     "eff_rank_narrow": 4.949545812606812,
+     "eff_rank_wide": 21.40709705352783,
+     "bottleneck_k": 40,
+     "total_params": 21698
+    },
+    "8:1": {
+     "gate_narrow": 0.5853688299655915,
+     "gate_narrow_sd": 0.02747246021045736,
+     "auc": 0.8274302705165052,
+     "auc_sd": 0.009422143232077946,
+     "eff_rank_narrow": 4.018502712249756,
+     "eff_rank_wide": 15.428874683380126,
+     "bottleneck_k": 20,
+     "total_params": 14738
+    },
+    "16:1": {
+     "gate_narrow": 0.6273955762386322,
+     "gate_narrow_sd": 0.0264554254498992,
+     "auc": 0.8419983659934983,
+     "auc_sd": 0.0063200853402124385,
+     "eff_rank_narrow": 3.669186568260193,
+     "eff_rank_wide": 9.958709526062012,
+     "bottleneck_k": 10,
+     "total_params": 11558
+    }
+   },
+   "pad-noise": {
+    "1:1": {
+     "gate_narrow": 0.6375706970691681,
+     "gate_narrow_sd": 0.025984258728273736,
+     "auc": 0.8444764052254641,
+     "auc_sd": 0.009327207343479282,
+     "eff_rank_narrow": 15.053082180023193,
+     "eff_rank_wide": 30.712890434265137,
+     "bottleneck_k": null,
+     "total_params": 13698
+    },
+    "2:1": {
+     "gate_narrow": 0.6175640642642974,
+     "gate_narrow_sd": 0.032415699171202524,
+     "auc": 0.8335647216648908,
+     "auc_sd": 0.010175972606737064,
+     "eff_rank_narrow": 25.70635051727295,
+     "eff_rank_wide": 41.33492851257324,
+     "bottleneck_k": null,
+     "total_params": 18818
+    },
+    "4:1": {
+     "gate_narrow": 0.6113328516483307,
+     "gate_narrow_sd": 0.022973110114134068,
+     "auc": 0.8187990655273791,
+     "auc_sd": 0.012099624791741944,
+     "eff_rank_narrow": 34.731210708618164,
+     "eff_rank_wide": 48.65663719177246,
+     "bottleneck_k": null,
+     "total_params": 29058
+    },
+    "8:1": {
+     "gate_narrow": 0.6048008263111114,
+     "gate_narrow_sd": 0.01582112307483683,
+     "auc": 0.810963298067706,
+     "auc_sd": 0.00896092513197966,
+     "eff_rank_narrow": 37.77968864440918,
+     "eff_rank_wide": 48.75516548156738,
+     "bottleneck_k": null,
+     "total_params": 29058
+    },
+    "16:1": {
+     "gate_narrow": 0.6387862682342529,
+     "gate_narrow_sd": 0.020304760871647207,
+     "auc": 0.8107499251113894,
+     "auc_sd": 0.009925033970742472,
+     "eff_rank_narrow": 41.682861328125,
+     "eff_rank_wide": 48.113957214355466,
+     "bottleneck_k": null,
+     "total_params": 29058
+    }
+   }
+  }
+ }
+}
