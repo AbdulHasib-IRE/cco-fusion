@@ -2,7 +2,7 @@
 
 Code and results for *Width-confounded modality importance in multimodal
 fusion: per-class estimation before training and the width bias of learned
-attention* (submitted to **Information Fusion**, Elsevier).
+attention*.
 
 The study asks whether a modality's **feature width** — how many columns it
 contributes — changes which modality an importance estimator, or a trained
@@ -66,7 +66,7 @@ cd cco-fusion
 git init -b main
 git add .
 git commit -m "Code and results for the class-conditional observability study"
-git remote add origin https://github.com/GITHUB_USER/cco-fusion.git
+git remote add origin [https://github.com/GITHUB_USER/cco-fusion.git](https://github.com/AbdulHasib-IRE/cco-fusion)
 git push -u origin main
 ```
 
