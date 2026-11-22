@@ -19,7 +19,7 @@ authors:
     orcid: "https://orcid.org/0009-0007-6143-8558"
     affiliation: "Department of Internet of Things and Robotics Engineering, University of Frontier Technology, Bangladesh"
 license: MIT
-repository-code: "https://github.com/GITHUB_USER/cco-fusion"
+repository-code: "https://github.com/AbdulHasib-IRE/cco-fusion"
 keywords:
   - multimodal fusion
   - modality selection
