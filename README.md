@@ -58,25 +58,17 @@ pull an incompatible `numpy`.
 | Discretize-then-PID | bins the block, reads the BROJA unique atom | no |
 | Equalise-by-subsampling | subsamples every block to a common width | no |
 
-## Pushing this to GitHub
+## Repository and archive
 
-```bash
-unzip cco-fusion-code.zip -d cco-fusion
-cd cco-fusion
-git init -b main
-git add .
-git commit -m "Code and results for the class-conditional observability study"
-git remote add origin [https://github.com/GITHUB_USER/cco-fusion.git](https://github.com/AbdulHasib-IRE/cco-fusion)
-git push -u origin main
-```
+Source: <https://github.com/AbdulHasib-IRE/cco-fusion>
 
-Then connect the repository to Zenodo (Zenodo → GitHub → flip the switch for
-`cco-fusion`), publish a release on GitHub, and Zenodo mints a DOI. Paste that
-DOI into the manuscript's Data availability section and into `CITATION.cff`,
-replacing `ZENODO_ID` and `GITHUB_USER` in both.
+To mint the DOI the article cites, connect this repository to Zenodo
+(Zenodo -> GitHub -> enable `cco-fusion`), then publish a release here. Zenodo
+archives the release and returns a DOI. Paste that DOI into `CITATION.cff` and
+into the article's Data availability section, replacing `ZENODO_ID`.
 
-`.gitignore` blocks `*.tex`, `*.bib`, `*.pdf` and `data/`, so a paper file or a
-raw corpus cannot be committed here by accident.
+`.gitignore` blocks `*.tex`, `*.bib`, `*.pdf` and `data/`, so a manuscript file
+or a raw corpus cannot be committed here by accident.
 
 ## Citation
 
